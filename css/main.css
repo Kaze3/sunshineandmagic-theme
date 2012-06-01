@@ -127,8 +127,8 @@ body {
 }
 /* line 35, ../sass/main.sass */
 #header-menu ul li {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* line 39, ../sass/main.sass */
 #header-menu ul li a {
