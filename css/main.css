@@ -118,6 +118,8 @@ body {
   vertical-align: middle;
   *vertical-align: auto;
   white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /* line 7, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 #header-menu ul li {
