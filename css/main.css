@@ -88,7 +88,7 @@ body {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url('/images/header_logo.png?1338578237');
+  background-image: url('../images/header_logo.png?1338578237');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 519px;
@@ -97,6 +97,6 @@ body {
 }
 
 /* line 27, ../sass/main.sass */
-#content {
+#contents {
   background: white;
 }
