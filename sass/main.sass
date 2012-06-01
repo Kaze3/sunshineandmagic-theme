@@ -1,4 +1,5 @@
 @import compass/reset
+@import compass/typography/lists/inline-block-list
 @import compass/typography/text/replacement
 @import compass/utilities/general/clearfix
 @import 960/grid
@@ -26,8 +27,10 @@ body
       margin: 14 auto
 
 #header-menu
-  a
-    font-family: "Bebas Neue Regular", Arial, sans-serif
+  ul
+    +inline-block-list
+    a
+      font-family: "Bebas Neue Regular", Arial, sans-serif
 
 #content
   background: $content-background
