@@ -94,9 +94,10 @@ body {
   width: 519px;
   height: 151px;
   display: block;
+  margin: 0 auto;
 }
 
-/* line 27, ../sass/main.sass */
+/* line 28, ../sass/main.sass */
 #contents {
   background: white;
 }
