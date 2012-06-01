@@ -98,6 +98,11 @@ body {
 }
 
 /* line 28, ../sass/main.sass */
-#contents {
+#content {
   background: white;
+}
+
+/* line 31, ../sass/main.sass */
+#footer {
+  background: #0059b2;
 }
