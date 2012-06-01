@@ -1,13 +1,4 @@
-@font-face
-  font-family: "aubrey"
-  src: url('../fonts/aubrey.eot')
-  src: local('../fonts/aubrey')
-  src: url('../fonts/aubrey.svg#aubrey') format('svg')
-  src: url('../fonts/aubrey.otf') format('opentype')
-  
-@font-face
-  font-family: "bebasneue"
-  src: url('../fonts/bebasneue.eot')
-  src: local('../fonts/bebasneue')
-  src: url('../fonts/bebasneue.svg#bebasneue') format('svg')
-  src: url('../fonts/bebasneue.otf') format('opentype')
+@import compass/css3/font-face
+
++font-face("Aubrey Regular", font-files("aubrey.woff", "aubrey.ttf", "aubrey.svg"), "aubrey.eot")
++font-face("Bebas Neue Regular", font-files("bebasneue.woff", "bebasneue.ttf", "bebasneue.svg"), "bebasneue.eot")

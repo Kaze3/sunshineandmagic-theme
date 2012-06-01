@@ -98,11 +98,16 @@ body {
 }
 
 /* line 28, ../sass/main.sass */
+#header-menu {
+  font-family: "Bebas Neue Regular";
+}
+
+/* line 31, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 31, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }

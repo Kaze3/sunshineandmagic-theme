@@ -1,15 +1,11 @@
 @font-face {
-  font-family: "aubrey";
-  src: url("../fonts/aubrey.eot");
-  src: local("../fonts/aubrey");
-  src: url("../fonts/aubrey.svg#aubrey") format("svg");
-  src: url("../fonts/aubrey.otf") format("opentype");
+  font-family: "Aubrey Regular";
+  src: url('fonts/aubrey.eot');
+  src: url('fonts/aubrey.eot?#iefix') format('eot'), url('fonts/aubrey.woff') format('woff'), url('fonts/aubrey.ttf') format('truetype'), url('fonts/aubrey.svg') format('svg');
 }
 
 @font-face {
-  font-family: "bebasneue";
-  src: url("../fonts/bebasneue.eot");
-  src: local("../fonts/bebasneue");
-  src: url("../fonts/bebasneue.svg#bebasneue") format("svg");
-  src: url("../fonts/bebasneue.otf") format("opentype");
+  font-family: "Bebas Neue Regular";
+  src: url('fonts/bebasneue.eot');
+  src: url('fonts/bebasneue.eot?#iefix') format('eot'), url('fonts/bebasneue.woff') format('woff'), url('fonts/bebasneue.ttf') format('truetype'), url('fonts/bebasneue.svg') format('svg');
 }
