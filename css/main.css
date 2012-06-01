@@ -126,7 +126,12 @@ body {
   *display: inline;
 }
 /* line 35, ../sass/main.sass */
-#header-menu ul a {
+#header-menu ul li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+/* line 39, ../sass/main.sass */
+#header-menu ul li a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -134,16 +139,16 @@ body {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
 /* line 6, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
-#header-menu ul a:active, #header-menu ul a:focus {
+#header-menu ul li a:active, #header-menu ul li a:focus {
   outline: none;
 }
 
-/* line 41, ../sass/main.sass */
+/* line 45, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 44, ../sass/main.sass */
+/* line 48, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }

@@ -32,11 +32,15 @@ body
 #header-menu
   ul
     +inline-block-list(10px)
-    a
-      +unstyled-link
-      font:
-        size: 1.5em
-        family: "Bebas Neue Regular", Arial, sans-serif
+    li
+      margin:
+        top: 4px
+        bottom: 4px
+      a
+        +unstyled-link
+        font:
+          size: 1.5em
+          family: "Bebas Neue Regular", Arial, sans-serif
 
 #content
   background: $content-background
