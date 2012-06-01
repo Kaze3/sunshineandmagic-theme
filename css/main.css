@@ -63,12 +63,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 10, ../sass/main.sass */
+/* line 11, ../sass/main.sass */
 body {
   background: #eeeeee;
 }
 
-/* line 13, ../sass/main.sass */
+/* line 14, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
@@ -77,9 +77,14 @@ body {
   *zoom: 1;
 }
 
-/* line 17, ../sass/main.sass */
+/* line 18, ../sass/main.sass */
 #header {
   overflow: hidden;
   *zoom: 1;
   background: #0059b2;
+}
+
+/* line 22, ../sass/main.sass */
+#content {
+  background: white;
 }
