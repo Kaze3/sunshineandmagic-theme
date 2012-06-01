@@ -62,3 +62,24 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 9, ../sass/main.sass */
+#wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 13, ../sass/main.sass */
+#header {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  overflow: hidden;
+  *zoom: 1;
+  background: #0059b2;
+}

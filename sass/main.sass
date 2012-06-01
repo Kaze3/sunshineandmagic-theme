@@ -1,1 +1,16 @@
 @import compass/reset
+@import compass/utilities/general/clearfix
+@import 960/grid
+
+$ninesixty-columns: 16
+
+$blue-background: #0059B2
+
+#wrap
+  +grid_container
+  +clearfix
+  
+#header
+  +grid(16)
+  +clearfix
+  background: $blue-background
