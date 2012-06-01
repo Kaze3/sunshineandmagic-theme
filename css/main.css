@@ -99,7 +99,7 @@ body {
 
 /* line 29, ../sass/main.sass */
 #header-menu a {
-  font-family: "Bebas Neue Regular";
+  font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
 
 /* line 32, ../sass/main.sass */
