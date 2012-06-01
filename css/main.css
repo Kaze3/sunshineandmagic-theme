@@ -66,9 +66,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 14, ../sass/main.sass */
 body {
   background: #eeeeee;
+  font-size: 100%;
 }
 
-/* line 17, ../sass/main.sass */
+/* line 18, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
@@ -77,13 +78,13 @@ body {
   *zoom: 1;
 }
 
-/* line 21, ../sass/main.sass */
+/* line 22, ../sass/main.sass */
 #header {
   overflow: hidden;
   *zoom: 1;
   background: #0059b2;
 }
-/* line 25, ../sass/main.sass */
+/* line 26, ../sass/main.sass */
 #header h1 a {
   text-indent: 110%;
   white-space: nowrap;
@@ -97,7 +98,7 @@ body {
   margin: 14 auto;
 }
 
-/* line 31, ../sass/main.sass */
+/* line 32, ../sass/main.sass */
 #header-menu ul {
   margin: 0;
   padding: 0;
@@ -121,11 +122,12 @@ body {
 #header-menu ul li {
   *display: inline;
 }
-/* line 33, ../sass/main.sass */
+/* line 34, ../sass/main.sass */
 #header-menu ul a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
+  font-size: 1.2em;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
 /* line 6, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
@@ -133,12 +135,12 @@ body {
   outline: none;
 }
 
-/* line 37, ../sass/main.sass */
+/* line 40, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 40, ../sass/main.sass */
+/* line 43, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }
