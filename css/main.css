@@ -130,15 +130,15 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-/* line 39, ../sass/main.sass */
-#header-menu ul li.current-page-ancestor {
-  background: #eeeeee;
-}
-/* line 41, ../sass/main.sass */
-#header-menu ul li.current-menu-item {
+/* line 40, ../sass/main.sass */
+#header-menu ul li.current-page-ancestor a {
   background: #eeeeee;
 }
 /* line 43, ../sass/main.sass */
+#header-menu ul li.current-menu-item a {
+  background: #eeeeee;
+}
+/* line 45, ../sass/main.sass */
 #header-menu ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -151,12 +151,12 @@ body {
   outline: none;
 }
 
-/* line 49, ../sass/main.sass */
+/* line 51, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 52, ../sass/main.sass */
+/* line 54, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }
