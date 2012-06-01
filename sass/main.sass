@@ -1,4 +1,5 @@
 @import compass/reset
+@import compass/typography/text/replacement
 @import compass/utilities/general/clearfix
 @import 960/grid
 
@@ -18,6 +19,10 @@ body
 #header
   +clearfix
   background: $blue-background
+  h1
+    a
+      +replace-text-with-dimensions("header_logo.png")
+	  display: block
   
 #content
   background: $content-background
