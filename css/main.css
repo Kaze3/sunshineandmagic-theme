@@ -97,17 +97,17 @@ body {
   margin: 14 auto;
 }
 
-/* line 28, ../sass/main.sass */
-#header-menu {
+/* line 29, ../sass/main.sass */
+#header-menu a {
   font-family: "Bebas Neue Regular";
 }
 
-/* line 31, ../sass/main.sass */
+/* line 32, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 34, ../sass/main.sass */
+/* line 35, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }
