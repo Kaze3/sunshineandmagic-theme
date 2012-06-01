@@ -99,7 +99,7 @@ body {
   margin: 14 auto;
 }
 
-/* line 33, ../sass/main.sass */
+/* line 43, ../sass/main.sass */
 #header-menu ul {
   margin: 0;
   padding: 0;
@@ -125,20 +125,28 @@ body {
 #header-menu ul li {
   *display: inline;
 }
-/* line 35, ../sass/main.sass */
+/* line 45, ../sass/main.sass */
 #header-menu ul li {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-/* line 40, ../sass/main.sass */
+/* line 33, ../sass/main.sass */
 #header-menu ul li.current-page-ancestor a {
-  background: #eeeeee;
+  background: #aaaaaa;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-/* line 43, ../sass/main.sass */
+/* line 33, ../sass/main.sass */
 #header-menu ul li.current-menu-item a {
-  background: #eeeeee;
+  background: #aaaaaa;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-/* line 45, ../sass/main.sass */
+/* line 53, ../sass/main.sass */
 #header-menu ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -151,12 +159,12 @@ body {
   outline: none;
 }
 
-/* line 51, ../sass/main.sass */
+/* line 59, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 54, ../sass/main.sass */
+/* line 62, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }
