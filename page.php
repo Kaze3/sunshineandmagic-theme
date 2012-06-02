@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="sub-menu">
-  <?php wp_list_pages('child_of=' . $post->ID); ?>
+  <?php wp_list_pages('child_of=' . $post->ID . '&title_li='); ?>
 </div>
 
 <div id="content">
