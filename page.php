@@ -7,13 +7,13 @@
       <?php
         echo 'ID:' . the_ID();
         $parents = get_post_ancestors(the_ID());
-        if ($parents):      
+        if ($parents) {    
           $pid = $parents[count($parents)-1];
           echo 'PID:' . $pid;
           $parent = get_page($pid);
       ?>
         <p class="parent-title"><?php get_the_title($parent); ?></p>
-      <?php endif; ?> 
+      <?php } ?> 
 	      <h1 class="entry-title"><?php the_title(); ?></h1>
       </header>
 
