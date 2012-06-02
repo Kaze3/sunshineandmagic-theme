@@ -19,8 +19,8 @@
   
   <?php 
     global $post;
-	$parents = get_post_ancestors( $post->ID );
-	$id = ($parents) ? $parents[count($parents)-1]: $post->ID;
+	  $parents = get_post_ancestors( $post->ID );
+    $id = ($parents) ? $parents[count($parents)-1]: $post->ID;
   ?>
 
   <div id="header-submenu">

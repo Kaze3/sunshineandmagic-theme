@@ -4,7 +4,13 @@
   <?php while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header">
-	    <h1 class="entry-title"><?php the_title(); ?></h1>
+      <?php
+        $parents = get_post_ancestors(the_ID());
+        $id = ($parents) ? $parents[count($parents)-1];
+        $parent = get_page($id);
+      ?>
+        <p class="parent-title"><?php $parent->post_name; ?></p>
+	      <h1 class="entry-title"><?php the_title(); ?></h1>
       </header>
 
       <div class="entry-content">
