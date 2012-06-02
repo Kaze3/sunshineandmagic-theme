@@ -180,13 +180,12 @@ h1 {
 
 /* line 84, ../sass/main.sass */
 .parent-title {
-  color: #999999;
+  color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
 /* line 90, ../sass/main.sass */
 #footer {
-  clear: both;
   background: #0059b2;
 }
