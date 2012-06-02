@@ -16,6 +16,13 @@
   <div id="header-menu">
     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
   </div>
+  
+  <?php 
+    if ($post->post_parent) {
+      $ancestors=get_post_ancestors($post->ID);
+      $root=count($ancestors)-1;
+      $parent = $ancestors[$root]; ?>
+
   <div id="header-submenu">
     <ul>
       <?php wp_list_pages('child_of=' . $post->ID . '&title_li='); ?>
