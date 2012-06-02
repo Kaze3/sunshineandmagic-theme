@@ -77,26 +77,16 @@ h1 {
   font-size: 2.25;
 }
 
-/* line 30, ../sass/main.sass */
-#site {
-  overflow: hidden;
-  *zoom: 1;
-}
-
 /* line 33, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-  overflow: hidden;
-  *zoom: 1;
   background: white;
 }
 
 /* line 38, ../sass/main.sass */
 #header {
-  overflow: hidden;
-  *zoom: 1;
   background: #0059b2;
 }
 /* line 42, ../sass/main.sass */
@@ -185,8 +175,6 @@ h1 {
   margin-left: 10px;
   margin-right: 10px;
   width: 940px;
-  overflow: hidden;
-  *zoom: 1;
   background: white;
 }
 
@@ -199,7 +187,5 @@ h1 {
 
 /* line 90, ../sass/main.sass */
 #footer {
-  overflow: hidden;
-  *zoom: 1;
   background: #0059b2;
 }
