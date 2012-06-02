@@ -187,5 +187,6 @@ h1 {
 
 /* line 90, ../sass/main.sass */
 #footer {
+  clear: both;
   background: #0059b2;
 }
