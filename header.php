@@ -14,11 +14,7 @@
 <div id="header">
   <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
   <div id="header-menu">
-    <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-  </div>
-  <div id="header-submenu">
-    <ul>
-      <?php wp_list_pages('child_of=' . $post->ID . '&title_li='); ?>
-    </ul>
+    <?php wp_nav_menu(array('theme_location' => 'header-menu',
+                            'depth' => 2)); ?>
   </div>
 </div> <!-- header -->
