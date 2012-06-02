@@ -18,17 +18,14 @@
   </div>
   
   <?php 
-    if ($post->post_parent) {
-      $ancestors=get_post_ancestors($post->ID);
-      $root=count($ancestors)-1;
-      $parent = $ancestors[$root];
-    } else {
-      $parent = $post->ID;
-    } ?>
+    global $post;
+	$parents = get_post_ancestors( $post->ID );
+	$id = ($parents) ? $parents[count($parents)-1]: $post->ID;
+  ?>
 
   <div id="header-submenu">
     <ul>
-      <?php wp_list_pages('child_of=' . $post->ID . '&title_li='); ?>
+      <?php wp_list_pages('child_of=' . $id . '&title_li='); ?>
     </ul>
   </div>
 </div> <!-- header -->
