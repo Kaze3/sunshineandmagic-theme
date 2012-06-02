@@ -11,10 +11,21 @@ $site-background: #EEEEEE
 $header-background: #0059B2
 $content-background: #FFFFFF
 
+$header-colour-1: #D80000
+$header-colour-2: #999999
+
+$title-font: "Bebas Neue Regular", Arial, sans-serif
+
 body
   background: $site-background
   font-size: 100%
   color: #FFFFFF
+  
+h1
+  color: $header-colour-1
+  font:
+    family: $title-font
+    size: 2.25
   
 #wrap
   +grid_container
@@ -49,7 +60,7 @@ $header-menu-hover: #EEEEEE
         +unstyled-link
         font:
           size: 1.5em
-          family: "Bebas Neue Regular", Arial, sans-serif
+          family: $title-font
         &:hover
           color: $header-menu-hover
 
@@ -63,6 +74,12 @@ $header-menu-hover: #EEEEEE
 
 #content
   background: $content-background
+  
+.parent-title:
+  color: $header-colour-2
+  font:
+    family: $title-font
+    size: 1.125em
   
 #footer
   background: $header-background

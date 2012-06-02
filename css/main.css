@@ -1,175 +1,61 @@
-/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/*
+Syntax error: Properties are only allowed within rules, directives, or other properties.
+        on line 78 of c:/Users/Matt/Documents/Development/Web/sunshineandmagic-theme/sass/main.sass
 
-/* line 20, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-}
-
-/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 101, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 114, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 14, ../sass/main.sass */
-body {
-  background: #eeeeee;
-  font-size: 100%;
-  color: white;
-}
-
-/* line 19, ../sass/main.sass */
-#wrap {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 23, ../sass/main.sass */
-#header {
-  overflow: hidden;
-  *zoom: 1;
-  background: #0059b2;
-}
-/* line 27, ../sass/main.sass */
-#header h1 a {
-  text-indent: 110%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-image: url('../images/header_logo.png?1338578237');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 519px;
-  height: 151px;
-  display: block;
-  margin: 14 auto;
-}
-
-/* line 38, ../sass/main.sass */
-#header-menu ul, #header-submenu ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 49, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
-#header-menu ul li, #header-submenu ul li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  white-space: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-/* line 7, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#header-menu ul li, #header-submenu ul li {
-  *display: inline;
-}
-/* line 40, ../sass/main.sass */
-#header-menu ul li, #header-submenu ul li {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-/* line 44, ../sass/main.sass */
-#header-menu ul li.current-page-ancestor, #header-submenu ul li.current-page-ancestor {
-  background: #aaaaaa;
-}
-/* line 46, ../sass/main.sass */
-#header-menu ul li.current-menu-item, #header-submenu ul li.current-menu-item {
-  background: #aaaaaa;
-}
-/* line 48, ../sass/main.sass */
-#header-menu ul li a, #header-submenu ul li a {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  font-size: 1.5em;
-  font-family: "Bebas Neue Regular", Arial, sans-serif;
-}
-/* line 6, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
-#header-menu ul li a:active, #header-submenu ul li a:active, #header-menu ul li a:focus, #header-submenu ul li a:focus {
-  outline: none;
-}
-/* line 53, ../sass/main.sass */
-#header-menu ul li a:hover, #header-submenu ul li a:hover {
-  color: #eeeeee;
-}
-
-/* line 58, ../sass/main.sass */
-#header-submenu ul {
-  background: #aaaaaa;
-}
-/* line 61, ../sass/main.sass */
-#header-submenu ul li a {
-  font-size: 1.25em;
-}
-
-/* line 64, ../sass/main.sass */
-#content {
-  background: white;
-}
-
-/* line 67, ../sass/main.sass */
-#footer {
-  background: #0059b2;
-}
+Backtrace:
+c:/Users/Matt/Documents/Development/Web/sunshineandmagic-theme/sass/main.sass:78
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `map'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/check_nesting.rb:27:in `visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/check_nesting.rb:34:in `visit_root'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/visitors/base.rb:24:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/tree/root_node.rb:19:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/engine.rb:300:in `_render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.1.19/lib/sass/engine.rb:247:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:139:in `block in compile'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/logger.rb:45:in `red'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:138:in `compile'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:118:in `compile_if_required'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `block in run'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/compiler.rb:100:in `run'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:147:in `recompile'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:87:in `perform'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/base.rb:18:in `execute'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/commands/project_base.rb:19:in `execute'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/bin/compass:29:in `block in <top (required)>'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/bin/compass:43:in `call'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/bin/compass:43:in `<top (required)>'
+c:/Ruby193/bin/compass:23:in `load'
+c:/Ruby193/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Properties are only allowed within rules, directives, or other properties.\A         on line 78 of c:/Users/Matt/Documents/Development/Web/sunshineandmagic-theme/sass/main.sass"; }
