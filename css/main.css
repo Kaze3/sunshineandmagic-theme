@@ -193,5 +193,7 @@ h1 {
 
 /* line 87, ../sass/main.sass */
 #footer {
+  overflow: hidden;
+  *zoom: 1;
   background: #0059b2;
 }
