@@ -8,7 +8,7 @@
 $ninesixty-columns: 16
 
 $site-background: #EEEEEE
-$blue-background: #0059B2
+$header-background: #0059B2
 $content-background: #FFFFFF
 
 body
@@ -22,7 +22,7 @@ body
 
 #header
   +clearfix
-  background: $blue-background
+  background: $header-background
   h1
     a
       +replace-text-with-dimensions("header_logo.png")
@@ -31,6 +31,8 @@ body
 
 @mixin menu-item-highlight
   background: #AAAAAA
+
+$header-menu-hover: #EEEEEE
  
 #header-menu
   ul
@@ -48,9 +50,11 @@ body
         font:
           size: 1.5em
           family: "Bebas Neue Regular", Arial, sans-serif
+        &:hover
+          color: $header-menu-hover
 
 #content
   background: $content-background
   
 #footer
-  background: $blue-background
+  background: $header-background
