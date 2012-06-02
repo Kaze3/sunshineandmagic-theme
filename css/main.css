@@ -173,17 +173,19 @@ h1 {
 
 /* line 75, ../sass/main.sass */
 #content {
+  overflow: hidden;
+  *zoom: 1;
   background: white;
 }
 
-/* line 78, ../sass/main.sass */
+/* line 79, ../sass/main.sass */
 .parent-title {
   color: #999999;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 84, ../sass/main.sass */
+/* line 85, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }
