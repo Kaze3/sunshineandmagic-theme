@@ -7,10 +7,10 @@
       <?php
         $parents = get_post_ancestors(the_ID());
         if ($parents):
-          $id = $parents[count($parents)-1];
-          $parent = get_page($id);
+          $pid = $parents[count($parents)-1];
+          $parent = get_page($pid);
       ?>
-        <p class="parent-title"><?php $parent->post_name; ?></p>
+        <p class="parent-title"><?php get_the_title($parent); ?></p>
       <?php endif; ?> 
 	      <h1 class="entry-title"><?php the_title(); ?></h1>
       </header>
