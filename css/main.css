@@ -155,12 +155,21 @@ body {
   color: #eeeeee;
 }
 
-/* line 59, ../sass/main.sass */
+/* line 58, ../sass/main.sass */
+#header-submenu ul {
+  background: #aaaaaa;
+}
+/* line 60, ../sass/main.sass */
+#header-submenu a {
+  font-size: 1.25em;
+}
+
+/* line 63, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 62, ../sass/main.sass */
+/* line 66, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }

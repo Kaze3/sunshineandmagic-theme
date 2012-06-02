@@ -54,7 +54,11 @@ $header-menu-hover: #EEEEEE
           color: $header-menu-hover
 
 #header-submenu
-  @extend #header-menu      
+  @extend #header-menu
+  ul
+    @include menu-item-highlight
+  a
+    font-size: 1.25em
 
 #content
   background: $content-background
