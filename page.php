@@ -5,14 +5,12 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header">
       <?php
-        echo 'ID:' . the_ID();
-        $parents = get_post_ancestors(the_ID());
+        $parents = get_post_ancestors(get_the_ID());
         if ($parents) {    
           $pid = $parents[count($parents)-1];
-          echo 'PID:' . $pid;
           $parent = get_page($pid);
       ?>
-        <p class="parent-title"><?php get_the_title($parent); ?></p>
+        <p class="parent-title"><?php echo get_the_title($parent); ?></p>
       <?php } ?> 
 	      <h1 class="entry-title"><?php the_title(); ?></h1>
       </header>
