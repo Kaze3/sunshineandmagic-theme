@@ -6,10 +6,12 @@
       <header class="entry-header">
       <?php
         $parents = get_post_ancestors(the_ID());
-        $id = ($parents) ? $parents[count($parents)-1];
-        $parent = get_page($id);
+        if ($parents):
+          $id = $parents[count($parents)-1];
+          $parent = get_page($id);
       ?>
         <p class="parent-title"><?php $parent->post_name; ?></p>
+      <?php endif; ?> 
 	      <h1 class="entry-title"><?php the_title(); ?></h1>
       </header>
 
