@@ -16,7 +16,7 @@
   <div id="header-menu">
     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
   </div>
-  <div id="sub-menu">
+  <div id="header-submenu">
     <ul>
       <?php wp_list_pages('child_of=' . $post->ID . '&title_li='); ?>
     </ul>

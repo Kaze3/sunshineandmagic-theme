@@ -100,7 +100,7 @@ body {
 }
 
 /* line 38, ../sass/main.sass */
-#header-menu ul {
+#header-menu ul, #header-submenu ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -108,7 +108,7 @@ body {
   *zoom: 1;
 }
 /* line 49, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
-#header-menu ul li {
+#header-menu ul li, #header-submenu ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -122,24 +122,24 @@ body {
   padding-right: 10px;
 }
 /* line 7, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#header-menu ul li {
+#header-menu ul li, #header-submenu ul li {
   *display: inline;
 }
 /* line 40, ../sass/main.sass */
-#header-menu ul li {
+#header-menu ul li, #header-submenu ul li {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 /* line 44, ../sass/main.sass */
-#header-menu ul li.current-page-ancestor {
+#header-menu ul li.current-page-ancestor, #header-submenu ul li.current-page-ancestor {
   background: #aaaaaa;
 }
 /* line 46, ../sass/main.sass */
-#header-menu ul li.current-menu-item {
+#header-menu ul li.current-menu-item, #header-submenu ul li.current-menu-item {
   background: #aaaaaa;
 }
 /* line 48, ../sass/main.sass */
-#header-menu ul li a {
+#header-menu ul li a, #header-submenu ul li a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -147,20 +147,20 @@ body {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
 /* line 6, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
-#header-menu ul li a:active, #header-menu ul li a:focus {
+#header-menu ul li a:active, #header-submenu ul li a:active, #header-menu ul li a:focus, #header-submenu ul li a:focus {
   outline: none;
 }
 /* line 53, ../sass/main.sass */
-#header-menu ul li a:hover {
+#header-menu ul li a:hover, #header-submenu ul li a:hover {
   color: #eeeeee;
 }
 
-/* line 56, ../sass/main.sass */
+/* line 59, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 59, ../sass/main.sass */
+/* line 62, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }
