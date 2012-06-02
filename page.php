@@ -22,4 +22,4 @@
   <?php endwhile; ?>
 </div>
 
-<?php get_footer(); ?>
+<?php //get_footer(); ?>
