@@ -159,17 +159,17 @@ body {
 #header-submenu ul {
   background: #aaaaaa;
 }
-/* line 60, ../sass/main.sass */
-#header-submenu a {
+/* line 61, ../sass/main.sass */
+#header-submenu ul li a {
   font-size: 1.25em;
 }
 
-/* line 63, ../sass/main.sass */
+/* line 64, ../sass/main.sass */
 #content {
   background: white;
 }
 
-/* line 66, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 #footer {
   background: #0059b2;
 }
