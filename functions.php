@@ -13,19 +13,28 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
-function grid_6_shortcode($atts, $content = null) {
-  return '<div class="grid_6">' . $content . '</div>';
-}
-
 function grid_6_alpha_shortcode($atts, $content = null) {
   return '<div class="grid_6 alpha">' . $content . '</div>';
 }
+add_shortcode('2col_first', 'grid_6_alpha_shortcode');
 
 function grid_6_omega_shortcode($atts, $content = null) {
   return '<div class="grid_6 omega">' . $content . '</div>';
 }
+add_shortcode('2col_second', 'grid_6_omega_shortcode');
 
-add_shortcode('grid_6', 'grid_6_shortcode');
-add_shortcode('grid_6_alpha', 'grid_6_alpha_shortcode');
-add_shortcode('grid_6_omega', 'grid_6_omega_shortcode');
+function grid_4_alpha_shortcode($atts, $content = null) {
+  return '<div class="grid_4 alpha">' . $content . '</div>';
+}
+add_shortcode('3col_first', 'grid_4_alpha_shortcode');
+
+function grid_4_shortcode($atts, $content = null) {
+  return '<div class="grid_4">' . $content . '</div>';
+}
+add_shortcode('3col_second', 'grid_4_shortcode');
+
+function grid_4_omega_shortcode($atts, $content = null) {
+  return '<div class="grid_4 omega">' . $content . '</div>';
+}
+add_shortcode('3col_third', 'grid_4_omega_shortcode');
 ?>
