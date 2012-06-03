@@ -2,7 +2,7 @@
 
 <?php if (is_front_page()): ?>
   <div id="front-splash">
-    <img src="<?php bloginfo('template_directory'); ?>/images/front_image.png" alt="Front Page Image" />
+    <img src="<?php bloginfo('template_directory'); ?>/images/front_image.jpg" alt="Front Page Image" />
   </div>
 <?php endif; ?>
 <div id="content">
