@@ -176,16 +176,18 @@ h1 {
   margin-right: 10px;
   width: 940px;
   background: white;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-/* line 84, ../sass/main.sass */
+/* line 87, ../sass/main.sass */
 .parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 90, ../sass/main.sass */
+/* line 93, ../sass/main.sass */
 #footer {
   clear: both;
   background: #0059b2;
