@@ -5,7 +5,7 @@
     <img src="<?php bloginfo('template_directory'); ?>/images/front_image.jpg" alt="Front Page Image" />
   </div>
 <?php endif; ?>
-<div id="content">
+<div id="content" class="container_12">
   <?php while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header">

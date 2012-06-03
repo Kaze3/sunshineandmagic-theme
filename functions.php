@@ -14,15 +14,15 @@ function register_menus() {
 add_action('init', 'register_menus');
 
 function grid_6_shortcode($atts, $content = null) {
-  return '<div class="container_12 grid_6">' . $content . '</div>';
+  return '<div class="grid_6">' . $content . '</div>';
 }
 
 function grid_6_alpha_shortcode($atts, $content = null) {
-  return '<div class="container_12 grid_6 alpha">' . $content . '</div>';
+  return '<div class="grid_6 alpha">' . $content . '</div>';
 }
 
 function grid_6_omega_shortcode($atts, $content = null) {
-  return '<div class="container_12 grid_6 omega">' . $content . '</div>';
+  return '<div class="grid_6 omega">' . $content . '</div>';
 }
 
 add_shortcode('grid_6', 'grid_6_shortcode');
