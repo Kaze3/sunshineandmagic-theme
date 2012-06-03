@@ -1,6 +1,7 @@
 /* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1,
+h2, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -72,13 +73,18 @@ body {
 }
 
 /* line 29, ../sass/main.sass */
-h1 {
+h1, h2 {
   color: #d80000;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 2.25em;
 }
 
-/* line 38, ../sass/main.sass */
+/* line 35, ../sass/main.sass */
+h2 {
+  font-size: 1.75;
+}
+
+/* line 42, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
@@ -86,12 +92,12 @@ h1 {
   background: white;
 }
 
-/* line 43, ../sass/main.sass */
+/* line 47, ../sass/main.sass */
 #header {
   background: #0059b2;
 }
-/* line 47, ../sass/main.sass */
-#header h1 a {
+/* line 51, ../sass/main.sass */
+#header h1 a, #header h2 a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -105,7 +111,7 @@ h1 {
   padding-top: 14px;
 }
 
-/* line 59, ../sass/main.sass */
+/* line 63, ../sass/main.sass */
 #header-menu ul, #header-submenu ul {
   margin: 0;
   padding: 0;
@@ -131,20 +137,20 @@ h1 {
 #header-menu ul li, #header-submenu ul li {
   *display: inline;
 }
-/* line 61, ../sass/main.sass */
+/* line 65, ../sass/main.sass */
 #header-menu ul li, #header-submenu ul li {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 65, ../sass/main.sass */
+/* line 69, ../sass/main.sass */
 #header-menu ul li.current-page-ancestor, #header-submenu ul li.current-page-ancestor {
   background: #aaaaaa;
 }
-/* line 67, ../sass/main.sass */
+/* line 71, ../sass/main.sass */
 #header-menu ul li.current-menu-item, #header-submenu ul li.current-menu-item {
   background: #aaaaaa;
 }
-/* line 69, ../sass/main.sass */
+/* line 73, ../sass/main.sass */
 #header-menu ul li a, #header-submenu ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -156,21 +162,21 @@ h1 {
 #header-menu ul li a:active, #header-submenu ul li a:active, #header-menu ul li a:focus, #header-submenu ul li a:focus {
   outline: none;
 }
-/* line 74, ../sass/main.sass */
+/* line 78, ../sass/main.sass */
 #header-menu ul li a:hover, #header-submenu ul li a:hover {
   color: #eeeeee;
 }
 
-/* line 79, ../sass/main.sass */
+/* line 83, ../sass/main.sass */
 #header-submenu ul {
   background: #aaaaaa;
 }
-/* line 82, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 #header-submenu ul li a {
   font-size: 1.25em;
 }
 
-/* line 85, ../sass/main.sass */
+/* line 89, ../sass/main.sass */
 #content {
   display: inline;
   float: left;
@@ -181,20 +187,21 @@ h1 {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-/* line 92, ../sass/main.sass */
+/* line 96, ../sass/main.sass */
 #content p {
   color: #868686;
   font-family: Arial, sans-serif;
   font-size: 1.25em;
+  margin-bottom: 10px;
 }
-/* line 97, ../sass/main.sass */
+/* line 102, ../sass/main.sass */
 #content p.parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 103, ../sass/main.sass */
+/* line 108, ../sass/main.sass */
 #footer {
   clear: both;
   background: #0059b2;
