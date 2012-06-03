@@ -187,15 +187,14 @@ h1 {
   font-family: Arial, sans-serif;
   font-size: 1.25em;
 }
-
-/* line 98, ../sass/main.sass */
-.parent-title {
+/* line 97, ../sass/main.sass */
+#content p.parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 104, ../sass/main.sass */
+/* line 103, ../sass/main.sass */
 #footer {
   clear: both;
   background: #0059b2;
