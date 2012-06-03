@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
-<div id="content">
-  <?php if (is_front_page()) ?>
+<?php if (is_front_page()): ?>
+  <div id="front-splash">
     <img src="<?php bloginfo('template_directory'); ?>/images/front_image.png" alt="Front Page Image" />
+  </div>
+<?php endif; ?>
+<div id="content">
   <?php while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header">
