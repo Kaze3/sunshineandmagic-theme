@@ -1,5 +1,5 @@
 <?php
-$content_width = 580;
+$content_width = 960;
 
 if (function_exists('register_sidebar')) {
   register_sidebar(array('name'=>'Footer 1'));
