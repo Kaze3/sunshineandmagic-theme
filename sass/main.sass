@@ -19,6 +19,11 @@ $header-colour-2: #CCCCCC
 $text-font: Arial, sans-serif
 $title-font: "Bebas Neue Regular", Arial, sans-serif
 
+$header-menu-hover: #EEEEEE
+
+@mixin menu-item-highlight
+  background: #BBBBBB
+
 body
   background: $site-background
   font:
@@ -53,11 +58,6 @@ h2
       display: block
       margin: 0 auto
       padding-top: 14px
-
-@mixin menu-item-highlight
-  background: #AAAAAA
-
-$header-menu-hover: #EEEEEE
  
 #header-menu
   ul
