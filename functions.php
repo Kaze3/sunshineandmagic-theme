@@ -14,7 +14,7 @@ function register_menus() {
 add_action('init', 'register_menus');
 
 function strip_empty_p($string) {
-  return preg_replace('/<p><\/p>/', '', $string);
+  return preg_replace('/<p[^>]*><\\/p[^>]*>/', '', $string);
 }
 
 function grid_6_alpha_shortcode($atts, $content = null) {
