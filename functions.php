@@ -16,10 +16,6 @@ add_action('init', 'register_menus');
 remove_filter( 'the_content', 'wpautop' );
 add_filter( 'the_content', 'wpautop' , 12);
 
-function strip_empty_p($content) {
-  return str_replace("\r\n", '', $content);
-}
-
 function grid_6_alpha_shortcode($atts, $content = null) {
   return '<div class="container_12"><div class="grid_6 alpha">' . wpautop(trim($content)) . '</div>';
 }
