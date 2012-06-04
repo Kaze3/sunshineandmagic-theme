@@ -192,17 +192,16 @@ h2 {
 #content p {
   color: #868686;
   font-family: Arial, sans-serif;
-  font-size: 1.25em;
   margin-bottom: 10px;
 }
-/* line 103, ../sass/main.sass */
+/* line 102, ../sass/main.sass */
 #content p.parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 109, ../sass/main.sass */
+/* line 108, ../sass/main.sass */
 #footer {
   clear: both;
   background: #0059b2;
