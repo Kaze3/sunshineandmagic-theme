@@ -14,6 +14,7 @@ function register_menus() {
 add_action('init', 'register_menus');
 
 function strip_empty_p($string) {
+  echo $content;
   return preg_replace('/<p[^>]*><\\/p[^>]*>/', '', $string);
 }
 
