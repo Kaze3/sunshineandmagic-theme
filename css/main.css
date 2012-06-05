@@ -205,6 +205,29 @@ h2 {
 
 /* line 110, ../sass/main.sass */
 #footer {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
   clear: both;
   background: #0059b2;
+}
+
+/* line 116, ../sass/main.sass */
+#footer-menu {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+}
+
+/* line 119, ../sass/main.sass */
+#footer-widget {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
 }
