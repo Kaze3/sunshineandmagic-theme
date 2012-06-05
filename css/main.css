@@ -210,6 +210,8 @@ h2 {
   margin-left: 10px;
   margin-right: 10px;
   width: 940px;
+  overflow: hidden;
+  *zoom: 1;
   clear: both;
   background: #0059b2;
 }
