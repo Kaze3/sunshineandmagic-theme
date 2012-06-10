@@ -543,3 +543,9 @@ article {
   text-align: center;
   clear: both;
 }
+
+/* line 155, ../sass/main.sass */
+.menu-footer-menu {
+  text-align: right;
+  border-right: 3px solid white;
+}
