@@ -7,10 +7,10 @@
       <div id="footer-widget">
         <?php dynamic_sidebar('Footer'); ?>
       </div>
-      <div id="colophon">
-        <p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?></p>
-      </div>
     </div>  <!-- footer-items -->
+    <div id="colophon">
+      <p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?></p>
+    </div>
   </div>  <!-- footer -->
 </div>  <!-- footer-containter -->
 
