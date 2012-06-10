@@ -522,3 +522,8 @@ article {
   width: 460px;
   margin-right: 0;
 }
+
+/* line 145, ../sass/main.sass */
+#colophon {
+  clear: both;
+}
