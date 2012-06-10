@@ -23,6 +23,16 @@ $header-menu-hover: #EEEEEE
 
 @mixin menu-item-highlight
   background: #BBBBBB
+  
+@mixin menu-link
+  a
+    +unstyled-link
+    font:
+      size: 1.25em
+      family: $title-font
+
+.menu-item
+  @include menu-link
 
 +grid-system-complete(12)
 
@@ -53,13 +63,6 @@ h2
   
 article
   +clearfix
-  
-.menu-item
-  a
-    +unstyled-link
-    font:
-      size: 1.25em
-      family: $title-font
 
 #wrap
   +grid-container
@@ -94,10 +97,7 @@ article
 #header-submenu
   @extend #header-menu
   ul
-    @include menu-item-highlight
-    li
-      a
-        
+    @include menu-item-highlight        
 
 #content-container
   +clearfix
