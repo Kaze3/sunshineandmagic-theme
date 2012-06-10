@@ -10,7 +10,6 @@
   </div>
 </div>  <!-- footer -->
 
-</div>  <!-- site -->
 </div>  <!-- wrap -->
 <?php wp_footer(); ?>
 </body>

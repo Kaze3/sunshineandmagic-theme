@@ -9,7 +9,6 @@
 </head>
   
 <body <?php body_class(); ?>>
-<div id="site">
 <div id="wrap">
 <div id="header">
   <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
