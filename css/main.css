@@ -493,15 +493,17 @@ article {
   margin-left: 10px;
   margin-right: 10px;
   width: 940px;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
-/* line 131, ../sass/main.sass */
+/* line 134, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 134, ../sass/main.sass */
+/* line 137, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -511,7 +513,7 @@ article {
   margin-left: 0;
 }
 
-/* line 138, ../sass/main.sass */
+/* line 141, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
