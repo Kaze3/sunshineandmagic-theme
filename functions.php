@@ -69,7 +69,8 @@ function my_custom_init()
     'capability_type' => 'post',  
     'hierarchical' => false,  
     'menu_position' => 5,  
-    'supports' => array('title','editor','thumbnail','custom-fields')  
+    'supports' => array('title','editor','thumbnail','custom-fields'),
+    'taxonomies' => array('category')
   );  
   register_post_type('faq',$args);  
 }  
