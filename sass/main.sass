@@ -53,16 +53,19 @@ h2
   
 article
   +clearfix
-
-//#site
-//  +clearfix
   
+.menu-item
+  a
+    +unstyled-link
+    font:
+      size: 1.25em
+      family: $title-font
+
 #wrap
   +grid-container
   +clearfix
 
 #header
-  //+clearfix
   background: $header-background
   h1
     a
@@ -85,7 +88,6 @@ article
       a
         font:
           size: 1.5em
-          family: $title-font
         &:hover
           color: $header-menu-hover
 
@@ -95,7 +97,7 @@ article
     @include menu-item-highlight
     li
       a
-        font-size: 1.25em
+        
 
 #content-container
   +clearfix
@@ -147,7 +149,3 @@ article
     bottom: 10px
   text-align: center
   clear: both
-  
-.menu-item
-  a
-    +unstyled-link
