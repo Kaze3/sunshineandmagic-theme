@@ -329,7 +329,7 @@ h1, h2 {
   color: #d80000;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 2.25em;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /* line 44, ../sass/main.sass */
