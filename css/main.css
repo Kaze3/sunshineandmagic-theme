@@ -481,9 +481,11 @@ article {
 /* line 123, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
+  overflow: hidden;
+  *zoom: 1;
 }
 
-/* line 126, ../sass/main.sass */
+/* line 127, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -495,7 +497,7 @@ article {
   clear: both;
 }
 
-/* line 131, ../sass/main.sass */
+/* line 132, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -504,7 +506,7 @@ article {
   width: 460px;
 }
 
-/* line 134, ../sass/main.sass */
+/* line 135, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
