@@ -97,7 +97,9 @@ article
 #header-submenu
   @extend #header-menu
   ul
-    @include menu-item-highlight        
+    @include menu-item-highlight
+    li
+      @include menu-link
 
 #content-container
   +clearfix

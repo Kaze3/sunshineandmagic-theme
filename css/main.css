@@ -445,15 +445,27 @@ article {
 #header-submenu ul {
   background: #bbbbbb;
 }
+/* line 28, ../sass/main.sass */
+#header-submenu ul li a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  font-size: 1.25em;
+  font-family: "Bebas Neue Regular", Arial, sans-serif;
+}
+/* line 6, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+#header-submenu ul li a:active, #header-submenu ul li a:focus {
+  outline: none;
+}
 
-/* line 102, ../sass/main.sass */
+/* line 104, ../sass/main.sass */
 #content-container {
   overflow: hidden;
   *zoom: 1;
   background: white;
 }
 
-/* line 106, ../sass/main.sass */
+/* line 108, ../sass/main.sass */
 #content {
   display: inline;
   float: left;
@@ -466,20 +478,20 @@ article {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-/* line 113, ../sass/main.sass */
+/* line 115, ../sass/main.sass */
 #content p {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 10px;
 }
-/* line 118, ../sass/main.sass */
+/* line 120, ../sass/main.sass */
 #content p.parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 124, ../sass/main.sass */
+/* line 126, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -487,7 +499,7 @@ article {
   *zoom: 1;
 }
 
-/* line 129, ../sass/main.sass */
+/* line 131, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -498,13 +510,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 135, ../sass/main.sass */
+/* line 137, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 138, ../sass/main.sass */
+/* line 140, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -514,7 +526,7 @@ article {
   margin-left: 0;
 }
 
-/* line 142, ../sass/main.sass */
+/* line 144, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -524,7 +536,7 @@ article {
   margin-right: 0;
 }
 
-/* line 146, ../sass/main.sass */
+/* line 148, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
