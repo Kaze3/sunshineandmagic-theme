@@ -504,13 +504,15 @@ article {
   margin-left: 10px;
   margin-right: 10px;
   width: 460px;
+  margin-left: 0;
 }
 
-/* line 135, ../sass/main.sass */
+/* line 136, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
   width: 460px;
+  margin-right: 0;
 }
