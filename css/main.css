@@ -481,23 +481,27 @@ article {
 /* line 123, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
+  clear: both;
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 127, ../sass/main.sass */
+/* line 128, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
   width: 940px;
-  overflow: hidden;
-  *zoom: 1;
-  clear: both;
 }
 
-/* line 132, ../sass/main.sass */
+/* line 131, ../sass/main.sass */
+#footer-items {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 134, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -507,7 +511,7 @@ article {
   margin-left: 0;
 }
 
-/* line 136, ../sass/main.sass */
+/* line 138, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
