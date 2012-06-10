@@ -525,5 +525,8 @@ article {
 
 /* line 145, ../sass/main.sass */
 #colophon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
   clear: both;
 }
