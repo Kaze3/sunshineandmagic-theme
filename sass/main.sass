@@ -83,7 +83,6 @@ article
       &.current-menu-item
         @include menu-item-highlight
       a
-        +unstyled-link
         font:
           size: 1.5em
           family: $title-font
@@ -148,3 +147,7 @@ article
     bottom: 10px
   text-align: center
   clear: both
+  
+.menu-item
+  a
+    +unstyled-link
