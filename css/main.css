@@ -341,12 +341,12 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.125em;
   color: white;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbbbbb), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(#bbbbbb, #eeeeee);
-  background-image: -moz-linear-gradient(#bbbbbb, #eeeeee);
-  background-image: -o-linear-gradient(#bbbbbb, #eeeeee);
-  background-image: -ms-linear-gradient(#bbbbbb, #eeeeee);
-  background-image: linear-gradient(#bbbbbb, #eeeeee);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbbbbb), color-stop(100%, #eeeeee));
+  background: -webkit-linear-gradient(#bbbbbb, #eeeeee);
+  background: -moz-linear-gradient(#bbbbbb, #eeeeee);
+  background: -o-linear-gradient(#bbbbbb, #eeeeee);
+  background: -ms-linear-gradient(#bbbbbb, #eeeeee);
+  background: linear-gradient(#bbbbbb, #eeeeee);
 }
 
 /* line 53, ../sass/main.sass */
