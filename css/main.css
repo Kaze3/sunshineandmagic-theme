@@ -491,14 +491,16 @@ article {
   font-family: Arial, sans-serif;
   margin-bottom: 10px;
 }
-/* line 126, ../sass/main.sass */
-#content p.parent-title {
+
+/* line 127, ../sass/main.sass */
+.parent-title {
   color: #cccccc;
+  margin-bottom: 0;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 132, ../sass/main.sass */
+/* line 134, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -506,7 +508,7 @@ article {
   *zoom: 1;
 }
 
-/* line 137, ../sass/main.sass */
+/* line 139, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -517,13 +519,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 143, ../sass/main.sass */
+/* line 145, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 146, ../sass/main.sass */
+/* line 148, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -533,7 +535,7 @@ article {
   margin-left: 0;
 }
 
-/* line 150, ../sass/main.sass */
+/* line 152, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -543,7 +545,7 @@ article {
   margin-right: 0;
 }
 
-/* line 154, ../sass/main.sass */
+/* line 156, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -551,14 +553,14 @@ article {
   clear: both;
 }
 
-/* line 161, ../sass/main.sass */
+/* line 163, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 166, ../sass/main.sass */
+/* line 168, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
