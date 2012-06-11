@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 29, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 .menu-item a {
   color: inherit;
   text-decoration: inherit;
@@ -328,28 +328,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: -880px;
 }
 
-/* line 40, ../sass/main.sass */
+/* line 41, ../sass/main.sass */
 .container_12 {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 43, ../sass/main.sass */
+/* line 44, ../sass/main.sass */
 body {
   background: #eeeeee;
   font-size: 100%;
   font-family: Arial, sans-serif;
   line-height: 1.125em;
   color: white;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #aaaaaa));
-  background-image: -webkit-linear-gradient(#ffffff, #aaaaaa);
-  background-image: -moz-linear-gradient(#ffffff, #aaaaaa);
-  background-image: -o-linear-gradient(#ffffff, #aaaaaa);
-  background-image: -ms-linear-gradient(#ffffff, #aaaaaa);
-  background-image: linear-gradient(#ffffff, #aaaaaa);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbbbbb), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(#bbbbbb, #eeeeee);
+  background-image: -moz-linear-gradient(#bbbbbb, #eeeeee);
+  background-image: -o-linear-gradient(#bbbbbb, #eeeeee);
+  background-image: -ms-linear-gradient(#bbbbbb, #eeeeee);
+  background-image: linear-gradient(#bbbbbb, #eeeeee);
 }
 
-/* line 52, ../sass/main.sass */
+/* line 53, ../sass/main.sass */
 h1, h2 {
   color: #d80000;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
@@ -358,20 +358,20 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-/* line 60, ../sass/main.sass */
+/* line 61, ../sass/main.sass */
 h2 {
   font-size: 1.75em;
   line-height: 1.125em;
   margin-bottom: 10px;
 }
 
-/* line 66, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 article {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 69, ../sass/main.sass */
+/* line 70, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
@@ -380,11 +380,11 @@ article {
   *zoom: 1;
 }
 
-/* line 73, ../sass/main.sass */
+/* line 74, ../sass/main.sass */
 #header {
   background: #0059b2;
 }
-/* line 76, ../sass/main.sass */
+/* line 77, ../sass/main.sass */
 #header h1 a, #header h2 a {
   text-indent: 110%;
   white-space: nowrap;
@@ -399,7 +399,7 @@ article {
   padding-top: 14px;
 }
 
-/* line 83, ../sass/main.sass */
+/* line 84, ../sass/main.sass */
 #header-menu ul, #header-submenu ul {
   margin: 0;
   padding: 0;
@@ -425,33 +425,33 @@ article {
 #header-menu ul li, #header-submenu ul li {
   *display: inline;
 }
-/* line 85, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 #header-menu ul li, #header-submenu ul li {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 89, ../sass/main.sass */
+/* line 90, ../sass/main.sass */
 #header-menu ul li.current-page-ancestor, #header-submenu ul li.current-page-ancestor {
   background: #bbbbbb;
 }
-/* line 91, ../sass/main.sass */
+/* line 92, ../sass/main.sass */
 #header-menu ul li.current-menu-item, #header-submenu ul li.current-menu-item {
   background: #bbbbbb;
 }
-/* line 93, ../sass/main.sass */
+/* line 94, ../sass/main.sass */
 #header-menu ul li a, #header-submenu ul li a {
   font-size: 1.5em;
 }
-/* line 96, ../sass/main.sass */
+/* line 97, ../sass/main.sass */
 #header-menu ul li a:hover, #header-submenu ul li a:hover {
   color: #eeeeee;
 }
 
-/* line 101, ../sass/main.sass */
+/* line 102, ../sass/main.sass */
 #header-submenu ul {
   background: #bbbbbb;
 }
-/* line 29, ../sass/main.sass */
+/* line 30, ../sass/main.sass */
 #header-submenu ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -464,14 +464,14 @@ article {
   outline: none;
 }
 
-/* line 106, ../sass/main.sass */
+/* line 107, ../sass/main.sass */
 #content-container {
   overflow: hidden;
   *zoom: 1;
   background: white;
 }
 
-/* line 110, ../sass/main.sass */
+/* line 111, ../sass/main.sass */
 #content {
   display: inline;
   float: left;
@@ -484,20 +484,20 @@ article {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-/* line 117, ../sass/main.sass */
+/* line 118, ../sass/main.sass */
 #content p {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 10px;
 }
-/* line 122, ../sass/main.sass */
+/* line 123, ../sass/main.sass */
 #content p.parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 128, ../sass/main.sass */
+/* line 129, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -505,7 +505,7 @@ article {
   *zoom: 1;
 }
 
-/* line 133, ../sass/main.sass */
+/* line 134, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -516,13 +516,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 139, ../sass/main.sass */
+/* line 140, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 142, ../sass/main.sass */
+/* line 143, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -532,7 +532,7 @@ article {
   margin-left: 0;
 }
 
-/* line 146, ../sass/main.sass */
+/* line 147, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -542,7 +542,7 @@ article {
   margin-right: 0;
 }
 
-/* line 150, ../sass/main.sass */
+/* line 151, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -550,14 +550,14 @@ article {
   clear: both;
 }
 
-/* line 157, ../sass/main.sass */
+/* line 158, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 162, ../sass/main.sass */
+/* line 163, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;

@@ -8,7 +8,8 @@
 
 $ninesixty-columns: 12
 
-$site-background: #EEEEEE
+$background-grad-start: #BBBBBB
+$background-grad-end: #EEEEEE
 $header-background: #0059B2
 $content-background: #FFFFFF
 
@@ -41,13 +42,13 @@ $header-menu-hover: #EEEEEE
   +clearfix
 
 body
-  background: $site-background
+  background: $background-grad-end
   font:
     size: 100%
     family: $text-font
   line-height: 1.125em
   color: #FFFFFF
-  +background-image(linear-gradient(white, #aaaaaa))
+  +background-image(linear-gradient($background-grad-start, $background-grad-end))
   
 h1
   color: $header-colour-1
