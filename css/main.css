@@ -340,12 +340,12 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.125em;
   color: white;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee));
-  background: -webkit-linear-gradient(#cccccc, #eeeeee, #eeeeee);
-  background: -moz-linear-gradient(#cccccc, #eeeeee, #eeeeee);
-  background: -o-linear-gradient(#cccccc, #eeeeee, #eeeeee);
-  background: -ms-linear-gradient(#cccccc, #eeeeee, #eeeeee);
-  background: linear-gradient(#cccccc, #eeeeee, #eeeeee);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(50%, #eeeeee), color-stop(100%, #eeeeee));
+  background: -webkit-linear-gradient(#dddddd, #eeeeee, #eeeeee);
+  background: -moz-linear-gradient(#dddddd, #eeeeee, #eeeeee);
+  background: -o-linear-gradient(#dddddd, #eeeeee, #eeeeee);
+  background: -ms-linear-gradient(#dddddd, #eeeeee, #eeeeee);
+  background: linear-gradient(#dddddd, #eeeeee, #eeeeee);
   background-repeat: repeat-x;
   background-attachment: fixed;
 }
