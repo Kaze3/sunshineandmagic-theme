@@ -34,6 +34,7 @@ Follow variables are useable :
 	</div>
 <?php } ?>
 	
+  <!-- Thumbnails -->
 	<?php foreach ( $images as $image ) : ?>
 	
 	<div id="ngg-image-<?php echo $image->pid ?>" class="ngg-gallery-thumbnail-box" <?php echo $image->style ?> >
@@ -53,6 +54,7 @@ Follow variables are useable :
 
  	<?php endforeach; ?>
  	
+  <!-- Pagination -->
  	<?php echo $pagination ?>
  	
 </div>
