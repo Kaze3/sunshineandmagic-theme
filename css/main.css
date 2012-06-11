@@ -336,9 +336,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 44, ../sass/main.sass */
 body {
-  background: #eeeeee;
-  background-repeat: repeat-x;
-  background-attachment: fixed;
   font-size: 100%;
   font-family: Arial, sans-serif;
   line-height: 1.125em;
@@ -349,6 +346,8 @@ body {
   background: -o-linear-gradient(#bbbbbb, #eeeeee);
   background: -ms-linear-gradient(#bbbbbb, #eeeeee);
   background: linear-gradient(#bbbbbb, #eeeeee);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
 }
 
 /* line 55, ../sass/main.sass */
