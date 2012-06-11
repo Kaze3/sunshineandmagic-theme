@@ -8,7 +8,8 @@
 
 $ninesixty-columns: 12
 
-$background-grad-start: #BBBBBB
+$background-grad-start: #CCCCCC
+$background-grad-mid: #EEEEEE
 $background-grad-end: #EEEEEE
 $header-background: #0059B2
 $content-background: #FFFFFF
@@ -48,7 +49,7 @@ body
     family: $text-font
   line-height: 1.125em
   color: #FFFFFF
-  +background(linear-gradient($background-grad-start, $background-grad-end))
+  +background(linear-gradient($background-grad-start, $background-grad-mid, $background-grad-end))
   background-repeat: repeat-x
   background-attachment: fixed
   
