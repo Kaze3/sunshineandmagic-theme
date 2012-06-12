@@ -16,10 +16,11 @@ Template Name: FAQ
 <?php $categories = array('payment', 'arrival', 'amenities', 'location');
 
 foreach ($categories as $category) {
-  $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)) ?>
-
+  $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)); 
+  $the_category = get_the_category() ?>
+  
     <?php if ($query->have_posts()) : ?>
-        <h3><?php echo get_the_category()->cat_name; ?></h3>
+        <h3><?php echo $the_category[0]->cat_name; ?></h3>
         <ul>  
           <?php while ($query->have_posts()) : $query->the_post(); ?>  
             <li><a href="#answer-<?php echo sanitize_title(get_the_title()); ?>"><?php the_title(); ?></a></li>  
@@ -30,7 +31,7 @@ foreach ($categories as $category) {
     </div>
     
 <?php foreach ($categories as $category) {
-  $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)) ?>
+  $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)); ?>
     
     <?php if ($query->have_posts()) : ?>  
       <div id="answers">  
