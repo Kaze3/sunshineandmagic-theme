@@ -565,10 +565,10 @@ article {
 /* line 171, ../sass/main.sass */
 #questions ul {
   margin-bottom: 16px;
-  list-style: circle;
 }
-/* line 174, ../sass/main.sass */
+/* line 173, ../sass/main.sass */
 #questions ul li {
+  list-style: circle;
   margin-bottom: 4px;
 }
 /* line 30, ../sass/main.sass */
