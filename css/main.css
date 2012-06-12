@@ -562,6 +562,14 @@ article {
   margin-top: 5px;
 }
 
+/* line 171, ../sass/main.sass */
+#questions ul {
+  margin-bottom: 16px;
+}
+/* line 173, ../sass/main.sass */
+#questions ul li {
+  margin-bottom: 4px;
+}
 /* line 30, ../sass/main.sass */
 #questions ul li a {
   color: inherit;
@@ -574,7 +582,7 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 174, ../sass/main.sass */
+/* line 176, ../sass/main.sass */
 #questions ul li a {
   color: #aaaaaa;
 }
