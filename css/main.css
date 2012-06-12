@@ -568,7 +568,6 @@ article {
 }
 /* line 173, ../sass/main.sass */
 #questions ul li {
-  list-style: circle;
   margin-bottom: 4px;
 }
 /* line 30, ../sass/main.sass */
@@ -583,7 +582,7 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 177, ../sass/main.sass */
+/* line 176, ../sass/main.sass */
 #questions ul li a {
   color: #aaaaaa;
 }
