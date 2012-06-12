@@ -18,8 +18,10 @@ Template Name: FAQ
 foreach ($categories as $category) {
   $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)); ?>
     <?php if ($query->have_posts()) : ?>
-      <?php $the_category = get_the_category() ?>
+      <?php $query->the_post(); ?>
+      <?php $the_category = get_the_category(); ?>
         <h3><?php echo $the_category[0]->cat_name; ?></h3>
+        <?php rewind_posts(); ?>
         <ul>  
           <?php while ($query->have_posts()) : $query->the_post(); ?>  
             <li><a href="#answer-<?php echo sanitize_title(get_the_title()); ?>"><?php the_title(); ?></a></li>  
