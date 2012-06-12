@@ -9,7 +9,7 @@ Template Name: FAQ
 <?php $categories = array('payment', 'arrival', 'amenities', 'location');
 
 foreach ($categories as $category) {
-  $query = new new WP_Query(array('post_type' => 'faq', 'category' => $category)) ?>
+  $query = new WP_Query(array('post_type' => 'faq', 'category' => $category)) ?>
 
 <div id="content-container">
   <div id="content">
