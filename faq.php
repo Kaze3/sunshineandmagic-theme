@@ -18,7 +18,7 @@ Template Name: FAQ
       <div id="questions">  
         <ul>  
           <?php while (have_posts()) : the_post(); ?>  
-            <li><a href="#answer<?php the_id() ?>"><?php the_title(); ?></a></li>  
+            <li><a href="#answer-<?php sanitize_title(the_title()); ?>"><?php the_title(); ?></a></li>  
           <?php endwhile; ?>  
         </ul>  
       </div>  
@@ -35,7 +35,7 @@ Template Name: FAQ
       <div id="answers">  
         <ul>  
           <?php while (have_posts()) : the_post(); ?>  
-            <li id="answer<?php the_id(); ?>">  
+            <li id="answer-<?php sanitize_title(the_title()); ?>">  
               <h2><?php the_title(); ?></h2>  
               <?php the_content(); ?>  
             </li>  
