@@ -6,13 +6,15 @@ Template Name: FAQ
 
 <?php get_header(); ?>
 
+<div id="content-container">
+  <div id="content">
+
 <?php $categories = array('payment', 'arrival', 'amenities', 'location');
 
 foreach ($categories as $category) {
   $query = new WP_Query(array('post_type' => 'faq', 'category' => $category)) ?>
 
-<div id="content-container">
-  <div id="content">
+
     <?php if ($query->have_posts()) : ?>
       <header class="entry-header">
         <h1 class="entry-title">FAQs</h1>
@@ -31,8 +33,10 @@ foreach ($categories as $category) {
       </header>  
       <p>Sorry, No FAQs created yet.</p>  
     <?php endif; ?>
+    <?php } ?> 
     
-    <?php $query->rewind_posts(); ?>
+<?php foreach ($categories as $category) {
+  $query = new WP_Query(array('post_type' => 'faq', 'category' => $category)) ?>
     
     <?php if ($query->have_posts()) : ?>  
       <div id="answers">  
