@@ -8,35 +8,31 @@ Template Name: FAQ
 
 <div id="content-container">
   <div id="content">
+    <header class="entry-header">
+      <h1 class="entry-title">FAQs</h1>
+    </header>
+    <div id="questions">
 
 <?php $categories = array('payment', 'arrival', 'amenities', 'location');
 
 foreach ($categories as $category) {
   $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)) ?>
 
-
     <?php if ($query->have_posts()) : ?>
-      <header class="entry-header">
-        <h1 class="entry-title">FAQs</h1>
-      </header>
-
-      <div id="questions">  
+        <h3><?php echo get_the_category()->cat_name; ?></h3>
         <ul>  
           <?php while ($query->have_posts()) : $query->the_post(); ?>  
             <li><a href="#answer-<?php echo sanitize_title(get_the_title()); ?>"><?php the_title(); ?></a></li>  
           <?php endwhile; ?>  
-        </ul>  
-      </div>  
-    <?php else : ?>  
-      <header class="entry-header">
-        <h1 class="entry-title">Not Found</h1>
-      </header>  
+        </ul>    
+    <?php else : ?>
       <p>Sorry, No FAQs created yet.</p>  
     <?php endif; ?>
-    <?php } ?> 
+    <?php } ?>
+    </div>
     
 <?php foreach ($categories as $category) {
-  $query = new WP_Query(array('post_type' => 'faq', 'category' => $category)) ?>
+  $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)) ?>
     
     <?php if ($query->have_posts()) : ?>  
       <div id="answers">  
