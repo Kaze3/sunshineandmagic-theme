@@ -1,6 +1,7 @@
 @import compass/reset
 @import compass/typography/links/unstyled-link
 @import compass/typography/lists/inline-block-list
+@import compass/typography/links/link-colors
 @import compass/typography/text/replacement
 @import compass/utilities/general/clearfix
 @import 960/grid
@@ -164,3 +165,9 @@ article
 .widget_zilla_social_widget
   list-style: none
   margin-top: 5px
+  
+#questions
+  ul
+    li
+      a
+        @include link-colors($header-colour-2, adjust-lightness($header-colour-2, 20))
