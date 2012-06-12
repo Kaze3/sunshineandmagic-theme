@@ -12,7 +12,7 @@ Template Name: FAQ
 <?php $categories = array('payment', 'arrival', 'amenities', 'location');
 
 foreach ($categories as $category) {
-  $query = new WP_Query(array('post_type' => 'faq', 'category' => $category)) ?>
+  $query = new WP_Query(array('post_type' => 'faq', 'category_name' => $category)) ?>
 
 
     <?php if ($query->have_posts()) : ?>
