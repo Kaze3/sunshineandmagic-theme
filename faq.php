@@ -31,36 +31,39 @@ if ($location->have_posts())
   $queries[] = $location
 ?>
 
-<?php
-foreach ($queries as $my_query) {
-      $wp_query = clone $my_query;
-      the_post();
-      $the_category = get_the_category(); ?>
-        <h3><?php echo $the_category[0]->cat_name; ?></h3>
-        <?php rewind_posts(); ?>
-        <ul>  
-          <?php while (have_posts()) : the_post(); ?>  
-            <li><a href="#answer-<?php echo sanitize_title(get_the_title()); ?>"><?php the_title(); ?></a></li>  
-          <?php endwhile; ?>  
-        </ul>     
-    <?php } ?>
-    </div>
+<?php foreach ($queries as $my_query) {
+  $wp_query = clone $my_query;
+  the_post();
+  $the_category = get_the_category(); ?>
+  <h4><?php echo $the_category[0]->cat_name; ?></h4>
+  <?php rewind_posts(); ?>
+  <ul>  
+    <?php while (have_posts()) : the_post(); ?>  
+      <li><a href="#answer-<?php echo sanitize_title(get_the_title()); ?>"><?php the_title(); ?></a></li>  
+    <?php endwhile; ?>  
+  </ul>     
+<?php } ?>
+</div> <!-- questions -->
+<div id="answers"> 
 <?php    
 foreach ($queries as $my_query) {
- $wp_query = clone $my_query; ?>
-      <div id="answers">  
-        <ul>  
-          <?php while (have_posts()) : the_post(); ?>  
-            <li id="answer-<?php echo sanitize_title(get_the_title()); ?>">  
-              <h2><?php the_title(); ?></h2>  
-              <?php the_content(); ?>  
-            </li>  
-          <?php endwhile; ?>  
-        </ul>  
-      </div>  
-    
+  $wp_query = clone $my_query;
+  the_post();
+  $the_category = get_the_category(); ?>
+  <h3><?php echo $the_category[0]->cat_name; ?></h3>
+  <?php rewind_posts(); ?>
+  <ul>  
+    <?php while (have_posts()) : the_post(); ?>  
+      <li id="answer-<?php echo sanitize_title(get_the_title()); ?>">  
+        <h2><?php the_title(); ?></h2>  
+        <?php the_content(); ?>  
+      </li>  
+    <?php endwhile; ?>  
+  </ul>  
 <?php } ?>  
-  </div>
-</div>
+
+</div> <!-- answers -->
+</div> <!-- content -->
+</div> <!-- content-container -->
 
 <?php get_footer(); ?>
