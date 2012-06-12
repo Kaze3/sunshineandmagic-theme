@@ -33,9 +33,9 @@ if ($location->have_posts())
 
 <?php
 foreach ($queries as $my_query) {
-      <?php $wp_query = clone $my_query; ?>
-      <?php the_post(); ?>
-      <?php $the_category = get_the_category(); ?>
+      $wp_query = clone $my_query;
+      the_post();
+      $the_category = get_the_category(); ?>
         <h3><?php echo $the_category[0]->cat_name; ?></h3>
         <?php rewind_posts(); ?>
         <ul>  
