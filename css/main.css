@@ -564,7 +564,7 @@ article {
 
 /* line 171, ../sass/main.sass */
 #questions ul {
-  color: header-colour-3;
+  color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
