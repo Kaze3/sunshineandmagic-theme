@@ -45,9 +45,9 @@ foreach ($queries as $my_query) {
         </ul>     
     <?php } ?>
     </div>
-    
+<?php    
 foreach ($queries as $my_query) {
-<?php $wp_query = clone $my_query; ?>
+ $wp_query = clone $my_query; ?>
       <div id="answers">  
         <ul>  
           <?php while (have_posts()) : the_post(); ?>  
