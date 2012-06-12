@@ -6,18 +6,21 @@ Template Name: FAQ
 
 <?php get_header(); ?>
 
-<?php query_posts('post_type=faq&order=ASC') ?>  
+<?php $categories = array('payment', 'arrival', 'amenities', 'location');
+
+foreach ($categories as $category) {
+  $query = new new WP_Query(array('post_type' => 'faq', 'category' => $category)) ?>
 
 <div id="content-container">
   <div id="content">
-    <?php if (have_posts()) : ?>
+    <?php if ($query->have_posts()) : ?>
       <header class="entry-header">
         <h1 class="entry-title">FAQs</h1>
       </header>
 
       <div id="questions">  
         <ul>  
-          <?php while (have_posts()) : the_post(); ?>  
+          <?php while ($query->have_posts()) : $query->the_post(); ?>  
             <li><a href="#answer-<?php echo sanitize_title(get_the_title()); ?>"><?php the_title(); ?></a></li>  
           <?php endwhile; ?>  
         </ul>  
@@ -29,12 +32,12 @@ Template Name: FAQ
       <p>Sorry, No FAQs created yet.</p>  
     <?php endif; ?>
     
-    <?php rewind_posts(); ?>
+    <?php $query->rewind_posts(); ?>
     
-    <?php if (have_posts()) : ?>  
+    <?php if ($query->have_posts()) : ?>  
       <div id="answers">  
         <ul>  
-          <?php while (have_posts()) : the_post(); ?>  
+          <?php while ($query->have_posts()) : $query->the_post(); ?>  
             <li id="answer-<?php echo sanitize_title(get_the_title()); ?>">  
               <h2><?php the_title(); ?></h2>  
               <?php the_content(); ?>  
@@ -44,7 +47,7 @@ Template Name: FAQ
       </div>  
     <?php endif; ?>
     
-    <?php wp_reset_query(); ?>  
+<?php } ?>  
   </div>
 </div>
 
