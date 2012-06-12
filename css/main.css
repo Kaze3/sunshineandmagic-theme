@@ -562,12 +562,8 @@ article {
   margin-top: 5px;
 }
 
-/* line 173, ../sass/main.sass */
-#questions ul li a {
-  color: #aaaaaa;
-}
 /* line 30, ../sass/main.sass */
-#questions ul li a a {
+#questions ul li a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -575,8 +571,12 @@ article {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
 /* line 6, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
-#questions ul li a a:active, #questions ul li a a:focus {
+#questions ul li a:active, #questions ul li a:focus {
   outline: none;
+}
+/* line 174, ../sass/main.sass */
+#questions ul li a {
+  color: #aaaaaa;
 }
 /* line 24, c:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #questions ul li a:hover {
