@@ -572,13 +572,17 @@ article {
   margin-top: 5px;
 }
 
-/* line 177, ../sass/main.sass */
+/* line 176, ../sass/main.sass */
+#questions {
+  margin-bottom: 20px;
+}
+/* line 178, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 181, ../sass/main.sass */
+/* line 182, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
@@ -594,7 +598,7 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 185, ../sass/main.sass */
+/* line 186, ../sass/main.sass */
 #questions ul li a.hover {
   color: #cccccc;
 }
