@@ -14,21 +14,29 @@ Template Name: FAQ
     <div id="questions">
 
 <?php
-$payment = new WP_Query(array('post_type' => 'faq', 'category_name' => 'payment'));
-if ($payment->have_posts())
-  $queries[] = $payment;
-  
-$arrival = new WP_Query(array('post_type' => 'faq', 'category_name' => 'arrival'));
+$arrival = new WP_Query(array('post_type' => 'faq', 'category_name' => 'Arrival'));
 if ($arrival->have_posts())
   $queries[] = $arrival;
   
-$amenities = new WP_Query(array('post_type' => 'faq', 'category_name' => 'amenities'));
+$general = new WP_Query(array('post_type' => 'faq', 'category_name' => 'General Information'));
+if ($general->have_posts())
+  $queries[] = $general;
+  
+$amenities = new WP_Query(array('post_type' => 'faq', 'category_name' => 'House Amenities'));
 if ($amenities->have_posts())
   $queries[] = $amenities;
   
-$location = new WP_Query(array('post_type' => 'faq', 'category_name' => 'location')); 
-if ($location->have_posts())
-  $queries[] = $location
+$area = new WP_Query(array('post_type' => 'faq', 'category_name' => 'Orlando Area')); 
+if ($area->have_posts())
+  $queries[] = $area;
+
+$payment = new WP_Query(array('post_type' => 'faq', 'category_name' => 'Payment')); 
+if ($payment->have_posts())
+  $queries[] = $payment;
+
+$amenities = new WP_Query(array('post_type' => 'faq', 'category_name' => 'Resort Amenities')); 
+if ($amenities->have_posts())
+  $queries[] = $amenities;
 ?>
 
 <?php foreach ($queries as $my_query) {
