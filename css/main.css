@@ -368,15 +368,16 @@ h3, h4 {
 /* line 70, ../sass/main.sass */
 h4 {
   font-size: 1.25em;
+  color: #cccccc;
 }
 
-/* line 74, ../sass/main.sass */
+/* line 75, ../sass/main.sass */
 article {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 77, ../sass/main.sass */
+/* line 78, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
@@ -385,11 +386,11 @@ article {
   *zoom: 1;
 }
 
-/* line 81, ../sass/main.sass */
+/* line 82, ../sass/main.sass */
 #header {
   background: #0059b2;
 }
-/* line 84, ../sass/main.sass */
+/* line 85, ../sass/main.sass */
 #header h1 a, #header h2 a, #header h3 a, #header h4 a {
   text-indent: 110%;
   white-space: nowrap;
@@ -404,7 +405,7 @@ article {
   padding-top: 14px;
 }
 
-/* line 91, ../sass/main.sass */
+/* line 92, ../sass/main.sass */
 #header-menu ul, #header-submenu ul {
   margin: 0;
   padding: 0;
@@ -430,29 +431,29 @@ article {
 #header-menu ul li, #header-submenu ul li {
   *display: inline;
 }
-/* line 93, ../sass/main.sass */
+/* line 94, ../sass/main.sass */
 #header-menu ul li, #header-submenu ul li {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 97, ../sass/main.sass */
+/* line 98, ../sass/main.sass */
 #header-menu ul li.current-page-ancestor, #header-submenu ul li.current-page-ancestor {
   background: #bbbbbb;
 }
-/* line 99, ../sass/main.sass */
+/* line 100, ../sass/main.sass */
 #header-menu ul li.current-menu-item, #header-submenu ul li.current-menu-item {
   background: #bbbbbb;
 }
-/* line 101, ../sass/main.sass */
+/* line 102, ../sass/main.sass */
 #header-menu ul li a, #header-submenu ul li a {
   font-size: 1.5em;
 }
-/* line 104, ../sass/main.sass */
+/* line 105, ../sass/main.sass */
 #header-menu ul li a:hover, #header-submenu ul li a:hover {
   color: #eeeeee;
 }
 
-/* line 109, ../sass/main.sass */
+/* line 110, ../sass/main.sass */
 #header-submenu ul {
   background: #bbbbbb;
 }
@@ -469,19 +470,19 @@ article {
   outline: none;
 }
 
-/* line 115, ../sass/main.sass */
+/* line 116, ../sass/main.sass */
 #front-splash img {
   display: block;
 }
 
-/* line 118, ../sass/main.sass */
+/* line 119, ../sass/main.sass */
 #content-container {
   overflow: hidden;
   *zoom: 1;
   background: white;
 }
 
-/* line 122, ../sass/main.sass */
+/* line 123, ../sass/main.sass */
 #content {
   display: inline;
   float: left;
@@ -494,20 +495,20 @@ article {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-/* line 129, ../sass/main.sass */
+/* line 130, ../sass/main.sass */
 #content p {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
 }
-/* line 134, ../sass/main.sass */
+/* line 135, ../sass/main.sass */
 #content p.parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 140, ../sass/main.sass */
+/* line 141, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -515,7 +516,7 @@ article {
   *zoom: 1;
 }
 
-/* line 145, ../sass/main.sass */
+/* line 146, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -526,13 +527,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 151, ../sass/main.sass */
+/* line 152, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 154, ../sass/main.sass */
+/* line 155, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -544,7 +545,7 @@ article {
   width: 440px;
 }
 
-/* line 160, ../sass/main.sass */
+/* line 161, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -556,7 +557,7 @@ article {
   width: 440px;
 }
 
-/* line 166, ../sass/main.sass */
+/* line 167, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -564,30 +565,30 @@ article {
   clear: both;
 }
 
-/* line 173, ../sass/main.sass */
+/* line 174, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 178, ../sass/main.sass */
+/* line 179, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 182, ../sass/main.sass */
+/* line 183, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 184, ../sass/main.sass */
+/* line 185, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 188, ../sass/main.sass */
+/* line 189, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
@@ -603,7 +604,7 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 192, ../sass/main.sass */
+/* line 193, ../sass/main.sass */
 #questions ul li a.hover {
   color: #cccccc;
 }

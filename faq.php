@@ -43,7 +43,7 @@ if ($amenities->have_posts())
   $wp_query = clone $my_query;
   the_post();
   $the_category = get_the_category(); ?>
-  <h4><?php echo $the_category[0]->cat_name; ?></h4>
+  <h3><?php echo $the_category[0]->cat_name; ?></h3>
   <?php rewind_posts(); ?>
   <ul>  
     <?php while (have_posts()) : the_post(); ?>  
