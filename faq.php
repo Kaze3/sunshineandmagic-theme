@@ -58,12 +58,12 @@ foreach ($queries as $my_query) {
   $wp_query = clone $my_query;
   the_post();
   $the_category = get_the_category(); ?>
-  <h3><?php echo $the_category[0]->cat_name; ?></h3>
+  <h2><?php echo $the_category[0]->cat_name; ?></h2>
   <?php rewind_posts(); ?>
   <ul>  
     <?php while (have_posts()) : the_post(); ?>  
       <li id="answer-<?php echo sanitize_title(get_the_title()); ?>">  
-        <h2><?php the_title(); ?></h2>  
+        <h4><?php the_title(); ?></h4>  
         <?php the_content(); ?>  
       </li>  
     <?php endwhile; ?>  
