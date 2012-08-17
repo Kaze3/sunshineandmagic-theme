@@ -541,9 +541,10 @@ article {
   width: 420px;
   margin-left: 0;
   margin-right: 10px;
+  width: 460px;
 }
 
-/* line 159, ../sass/main.sass */
+/* line 160, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -552,9 +553,10 @@ article {
   width: 420px;
   margin-right: 0;
   margin-left: 10px;
+  width: 460px;
 }
 
-/* line 164, ../sass/main.sass */
+/* line 166, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -562,30 +564,30 @@ article {
   clear: both;
 }
 
-/* line 171, ../sass/main.sass */
+/* line 173, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 176, ../sass/main.sass */
+/* line 178, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 180, ../sass/main.sass */
+/* line 182, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 182, ../sass/main.sass */
+/* line 184, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 186, ../sass/main.sass */
+/* line 188, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
@@ -601,7 +603,7 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 190, ../sass/main.sass */
+/* line 192, ../sass/main.sass */
 #questions ul li a.hover {
   color: #cccccc;
 }
