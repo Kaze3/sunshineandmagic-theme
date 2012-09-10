@@ -3,6 +3,7 @@ $content_width = 960;
 
 if (function_exists('register_sidebar')) {
   register_sidebar(array('name'=>'Footer'));
+  register_sidebar(array('name'=>'Front'));
 }
 
 function register_menus() {

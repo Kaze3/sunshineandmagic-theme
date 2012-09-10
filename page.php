@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <?php if (is_front_page()): ?>
-  <div id="front-splash">
-    <img src="<?php bloginfo('template_directory'); ?>/images/front_image.jpg" alt="Front Page Image" />
+  <div id="front-widget">
+    <?php dynamic_sidebar('Front'); ?>
   </div>
 <?php endif; ?>
 
