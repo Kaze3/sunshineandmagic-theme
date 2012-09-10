@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<?php if (is_front_page()): ?>
-  <div id="front-widget">
-    <?php dynamic_sidebar('Front'); ?>
+<?php if (is_front_page() && function_exists( 'meteor_slideshow' )) { ?>
+  <div id="front-slideshow">
+    <?php meteor_slideshow(); ?>
   </div>
-<?php endif; ?>
+<?php } ?>
 
 <div id="content-container">
   <div id="content">
