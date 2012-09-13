@@ -9,3 +9,9 @@
   src: url('../fonts/bebasneue/bebasneue.eot');
   src: url('../fonts/bebasneue/bebasneue.eot?#iefix') format('eot'), url('../fonts/bebasneue/bebasneue.woff') format('woff'), url('../fonts/bebasneue/bebasneue.ttf') format('truetype'), url('../fonts/bebasneue/bebasneue.svg') format('svg');
 }
+
+@font-face {
+  font-family: "League Gothic";
+  src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot?#iefix') format('eot'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.svg') format('svg');
+}
