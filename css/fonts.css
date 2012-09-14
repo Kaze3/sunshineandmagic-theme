@@ -15,3 +15,15 @@
   src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot');
   src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot?#iefix') format('eot'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.svg') format('svg');
 }
+
+@font-face {
+  font-family: "Arimo Regular";
+  src: url('../fonts/arimo/Arimo-Regular-Latin-webfont.eot');
+  src: url('../fonts/arimo/Arimo-Regular-Latin-webfont.eot?#iefix') format('eot'), url('../fonts/arimo/Arimo-Regular-Latin-webfont.woff') format('woff'), url('../fonts/arimo/Arimo-Regular-Latin-webfont.ttf') format('truetype'), url('../fonts/arimo/Arimo-Regular-Latin-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Arimo Bold";
+  src: url('../fonts/arimo/Arimo-Bold-Latin-webfont.eot');
+  src: url('../fonts/arimo/Arimo-Bold-Latin-webfont.eot?#iefix') format('eot'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.woff') format('woff'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.ttf') format('truetype'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.svg') format('svg');
+}
