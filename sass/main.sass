@@ -20,7 +20,8 @@ $header-colour-2: #CCCCCC
 $header-colour-3: #AAAAAA
 
 $text-font: Arial, sans-serif
-$title-font: "Arimo Regular", Arial, sans-serif
+$title-font-bold: "Oswald Bold", Arial, sans-serif
+$title-font-regular: "Oswald Regular", Arial, sans-serif
 
 $header-menu-hover: #EEEEEE
 
@@ -33,7 +34,7 @@ $header-menu-hover: #EEEEEE
     cursor: pointer
     font:
       size: 1.25em
-      family: $title-font
+      family: $title-font-bold
 
 .menu-item
   @include menu-link
@@ -54,7 +55,7 @@ body
 h1
   color: $header-colour-1
   font:
-    family: $title-font
+    family: $title-font-bold
     size: 2.25em
   line-height: 1.125em
   margin-bottom: 20px
@@ -142,7 +143,7 @@ article
     &.parent-title
       color: $header-colour-2
       font:
-        family: $title-font
+        family: $title-font-bold
         size: 1.125em
       margin-bottom: 0px
   
@@ -165,6 +166,8 @@ article
   +alpha
   margin-right: 10px
   width: 440px
+  .menu-item
+    font-family: $title-font-regular
   
 #footer-widget
   +grid(6)

@@ -27,3 +27,15 @@
   src: url('../fonts/arimo/Arimo-Bold-Latin-webfont.eot');
   src: url('../fonts/arimo/Arimo-Bold-Latin-webfont.eot?#iefix') format('eot'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.woff') format('woff'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.ttf') format('truetype'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.svg') format('svg');
 }
+
+@font-face {
+  font-family: "Oswald Regular";
+  src: url('../fonts/oswald/Oswald-Regular-webfont.eot');
+  src: url('../fonts/oswald/Oswald-Regular-webfont.eot?#iefix') format('eot'), url('../fonts/oswald/Oswald-Regular-webfont.woff') format('woff'), url('../fonts/oswald/Oswald-Regular-webfont.ttf') format('truetype'), url('../fonts/oswald/Oswald-Regular-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "Oswald Bold";
+  src: url('../fonts/oswald/Oswald-Bold-webfont.eot');
+  src: url('../fonts/oswald/Oswald-Bold-webfont.eot?#iefix') format('eot'), url('../fonts/oswald/Oswald-Bold-webfont.woff') format('woff'), url('../fonts/oswald/Oswald-Bold-webfont.ttf') format('truetype'), url('../fonts/oswald/Oswald-Bold-webfont.svg') format('svg');
+}
