@@ -574,32 +574,33 @@ article {
   margin-bottom: 10px;
   text-align: center;
   clear: both;
+  color: nav-text-colour;
 }
 
-/* line 184, ../sass/main.sass */
+/* line 185, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 189, ../sass/main.sass */
+/* line 190, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 193, ../sass/main.sass */
+/* line 194, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 195, ../sass/main.sass */
+/* line 196, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 199, ../sass/main.sass */
+/* line 200, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
@@ -617,7 +618,12 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 203, ../sass/main.sass */
+/* line 204, ../sass/main.sass */
 #questions ul li a.hover {
   color: #cccccc;
+}
+
+/* line 208, ../sass/main.sass */
+.sbc-navigation p {
+  margin-bottom: 0px;
 }
