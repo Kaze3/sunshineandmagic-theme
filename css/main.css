@@ -464,9 +464,6 @@ article {
 /* line 124, ../sass/main.sass */
 #header-submenu {
   min-height: 6px;
-}
-/* line 127, ../sass/main.sass */
-#header-submenu ul {
   background: #bbbbbb;
 }
 /* line 33, ../sass/main.sass */
