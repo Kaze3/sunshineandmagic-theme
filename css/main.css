@@ -512,12 +512,12 @@ article {
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
 }
-/* line 146, ../sass/main.sass */
-.entry-content p.parent-title {
+
+/* line 147, ../sass/main.sass */
+.parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
-  margin-bottom: 0px;
 }
 
 /* line 153, ../sass/main.sass */
