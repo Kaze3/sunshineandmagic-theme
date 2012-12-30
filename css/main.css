@@ -616,7 +616,7 @@ article {
   outline: none;
 }
 /* line 209, ../sass/main.sass */
-#questions ul li a.hover {
+#questions ul li a:hover {
   color: #cccccc;
 }
 
