@@ -38,6 +38,13 @@ $header-menu-hover: #EEEEEE
       family: $title-font
     color: $nav-text-colour
 
+@mixin main-text
+  p
+    color: $main-text-colour
+    font:
+      family: $text-font
+    margin-bottom: 24px
+
 .menu-item
   @include menu-link
 
@@ -138,11 +145,7 @@ article
     bottom: 16px
 
 .entry-content
-  p
-    color: $main-text-colour
-    font:
-      family: $text-font
-    margin-bottom: 24px
+  @include main-text
 
 .parent-title
   color: $header-colour-2
@@ -201,7 +204,10 @@ article
     list-style: circle inside
     li
       margin-bottom: 4px
-      @include menu-link
       a
+        +unstyled-link
         &.hover
           color: $header-colour-2
+
+#answers
+  @include main-text

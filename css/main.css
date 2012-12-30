@@ -332,13 +332,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: -880px;
 }
 
-/* line 46, ../sass/main.sass */
+/* line 53, ../sass/main.sass */
 .container_12 {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 49, ../sass/main.sass */
+/* line 56, ../sass/main.sass */
 body {
   background: #eeeeee;
   font-size: 100%;
@@ -346,7 +346,7 @@ body {
   line-height: 1.125em;
 }
 
-/* line 56, ../sass/main.sass */
+/* line 63, ../sass/main.sass */
 h1, h2, h3, h4 {
   color: #b20000;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
@@ -355,40 +355,40 @@ h1, h2, h3, h4 {
   margin-bottom: 20px;
 }
 
-/* line 64, ../sass/main.sass */
+/* line 71, ../sass/main.sass */
 h2, h3, h4 {
   font-size: 1.75em;
   margin-bottom: 14px;
 }
 
-/* line 69, ../sass/main.sass */
+/* line 76, ../sass/main.sass */
 h3, h4 {
   font-size: 1.5em;
 }
 
-/* line 73, ../sass/main.sass */
+/* line 80, ../sass/main.sass */
 h4 {
   font-size: 1.25em;
   color: #868686;
 }
 
-/* line 78, ../sass/main.sass */
+/* line 85, ../sass/main.sass */
 em {
   font-style: italic;
 }
 
-/* line 81, ../sass/main.sass */
+/* line 88, ../sass/main.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 84, ../sass/main.sass */
+/* line 91, ../sass/main.sass */
 article {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 87, ../sass/main.sass */
+/* line 94, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
@@ -397,11 +397,11 @@ article {
   *zoom: 1;
 }
 
-/* line 91, ../sass/main.sass */
+/* line 98, ../sass/main.sass */
 #header {
   background: #0059b2;
 }
-/* line 94, ../sass/main.sass */
+/* line 101, ../sass/main.sass */
 #header h1 a, #header h2 a, #header h3 a, #header h4 a {
   text-indent: -119988px;
   overflow: hidden;
@@ -416,7 +416,7 @@ article {
   padding-top: 14px;
 }
 
-/* line 101, ../sass/main.sass */
+/* line 108, ../sass/main.sass */
 #header-menu ul, #header-submenu ul {
   margin: 0;
   padding: 0;
@@ -439,29 +439,29 @@ article {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 103, ../sass/main.sass */
+/* line 110, ../sass/main.sass */
 #header-menu ul li, #header-submenu ul li {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 107, ../sass/main.sass */
+/* line 114, ../sass/main.sass */
 #header-menu ul li.current-page-ancestor, #header-submenu ul li.current-page-ancestor {
   background: #bbbbbb;
 }
-/* line 109, ../sass/main.sass */
+/* line 116, ../sass/main.sass */
 #header-menu ul li.current-menu-item, #header-submenu ul li.current-menu-item {
   background: #bbbbbb;
 }
-/* line 111, ../sass/main.sass */
+/* line 118, ../sass/main.sass */
 #header-menu ul li a, #header-submenu ul li a {
   font-size: 1.5em;
 }
-/* line 114, ../sass/main.sass */
+/* line 121, ../sass/main.sass */
 #header-menu ul li a:hover, #header-submenu ul li a:hover {
   color: #eeeeee;
 }
 
-/* line 119, ../sass/main.sass */
+/* line 126, ../sass/main.sass */
 #header-submenu ul {
   background: #bbbbbb;
 }
@@ -480,19 +480,19 @@ article {
   outline: none;
 }
 
-/* line 125, ../sass/main.sass */
+/* line 132, ../sass/main.sass */
 #front-splash img {
   display: block;
 }
 
-/* line 128, ../sass/main.sass */
+/* line 135, ../sass/main.sass */
 #content-container {
   overflow: hidden;
   *zoom: 1;
   background: white;
 }
 
-/* line 132, ../sass/main.sass */
+/* line 139, ../sass/main.sass */
 #content {
   display: inline;
   float: left;
@@ -506,21 +506,21 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 141, ../sass/main.sass */
+/* line 42, ../sass/main.sass */
 .entry-content p {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
 }
 
-/* line 147, ../sass/main.sass */
+/* line 150, ../sass/main.sass */
 .parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 153, ../sass/main.sass */
+/* line 156, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -528,7 +528,7 @@ article {
   *zoom: 1;
 }
 
-/* line 158, ../sass/main.sass */
+/* line 161, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -539,13 +539,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 164, ../sass/main.sass */
+/* line 167, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 167, ../sass/main.sass */
+/* line 170, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -557,7 +557,7 @@ article {
   width: 440px;
 }
 
-/* line 173, ../sass/main.sass */
+/* line 176, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -569,7 +569,7 @@ article {
   width: 440px;
 }
 
-/* line 179, ../sass/main.sass */
+/* line 182, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -578,48 +578,51 @@ article {
   color: white;
 }
 
-/* line 187, ../sass/main.sass */
+/* line 190, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 192, ../sass/main.sass */
+/* line 195, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 196, ../sass/main.sass */
+/* line 199, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 198, ../sass/main.sass */
+/* line 201, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 202, ../sass/main.sass */
+/* line 205, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
-/* line 33, ../sass/main.sass */
+/* line 207, ../sass/main.sass */
 #questions ul li a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
-  cursor: pointer;
-  font-size: 1.25em;
-  font-family: "Bebas Neue Regular", Arial, sans-serif;
-  color: white;
 }
 /* line 6, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 206, ../sass/main.sass */
+/* line 209, ../sass/main.sass */
 #questions ul li a.hover {
   color: #cccccc;
+}
+
+/* line 42, ../sass/main.sass */
+#answers p {
+  color: #868686;
+  font-family: Arial, sans-serif;
+  margin-bottom: 24px;
 }
