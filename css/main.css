@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 33, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 .menu-item a {
   color: inherit;
   text-decoration: inherit;
@@ -332,13 +332,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: -880px;
 }
 
-/* line 53, ../sass/main.sass */
+/* line 55, ../sass/main.sass */
 .container_12 {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 56, ../sass/main.sass */
+/* line 58, ../sass/main.sass */
 body {
   background: #eeeeee;
   font-size: 100%;
@@ -346,7 +346,7 @@ body {
   line-height: 1.125em;
 }
 
-/* line 63, ../sass/main.sass */
+/* line 65, ../sass/main.sass */
 h1, h2, h3, h4 {
   color: #b20000;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
@@ -355,40 +355,40 @@ h1, h2, h3, h4 {
   margin-bottom: 20px;
 }
 
-/* line 71, ../sass/main.sass */
+/* line 73, ../sass/main.sass */
 h2, h3, h4 {
   font-size: 1.75em;
   margin-bottom: 14px;
 }
 
-/* line 76, ../sass/main.sass */
+/* line 78, ../sass/main.sass */
 h3, h4 {
   font-size: 1.5em;
 }
 
-/* line 80, ../sass/main.sass */
+/* line 82, ../sass/main.sass */
 h4 {
   font-size: 1.25em;
   color: #868686;
 }
 
-/* line 85, ../sass/main.sass */
+/* line 87, ../sass/main.sass */
 em {
   font-style: italic;
 }
 
-/* line 88, ../sass/main.sass */
+/* line 90, ../sass/main.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 91, ../sass/main.sass */
+/* line 93, ../sass/main.sass */
 article {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 94, ../sass/main.sass */
+/* line 96, ../sass/main.sass */
 #wrap {
   margin-left: auto;
   margin-right: auto;
@@ -397,11 +397,11 @@ article {
   *zoom: 1;
 }
 
-/* line 98, ../sass/main.sass */
+/* line 100, ../sass/main.sass */
 #header {
   background: #0059b2;
 }
-/* line 101, ../sass/main.sass */
+/* line 103, ../sass/main.sass */
 #header h1 a, #header h2 a, #header h3 a, #header h4 a {
   text-indent: -119988px;
   overflow: hidden;
@@ -416,7 +416,7 @@ article {
   padding-top: 14px;
 }
 
-/* line 108, ../sass/main.sass */
+/* line 110, ../sass/main.sass */
 #header-menu ul, #header-submenu ul {
   margin: 0;
   padding: 0;
@@ -439,34 +439,34 @@ article {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 110, ../sass/main.sass */
+/* line 112, ../sass/main.sass */
 #header-menu ul li, #header-submenu ul li {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/* line 114, ../sass/main.sass */
+/* line 116, ../sass/main.sass */
 #header-menu ul li.current-page-ancestor, #header-submenu ul li.current-page-ancestor {
   background: #bbbbbb;
 }
-/* line 116, ../sass/main.sass */
+/* line 118, ../sass/main.sass */
 #header-menu ul li.current-menu-item, #header-submenu ul li.current-menu-item {
   background: #bbbbbb;
 }
-/* line 118, ../sass/main.sass */
+/* line 120, ../sass/main.sass */
 #header-menu ul li a, #header-submenu ul li a {
   font-size: 1.5em;
 }
-/* line 121, ../sass/main.sass */
+/* line 123, ../sass/main.sass */
 #header-menu ul li a:hover, #header-submenu ul li a:hover {
   color: #eeeeee;
 }
 
-/* line 124, ../sass/main.sass */
+/* line 126, ../sass/main.sass */
 #header-submenu {
   min-height: 6px;
   background: #bbbbbb;
 }
-/* line 33, ../sass/main.sass */
+/* line 36, ../sass/main.sass */
 #header-submenu ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -481,19 +481,19 @@ article {
   outline: none;
 }
 
-/* line 133, ../sass/main.sass */
+/* line 135, ../sass/main.sass */
 #front-splash img {
   display: block;
 }
 
-/* line 136, ../sass/main.sass */
+/* line 138, ../sass/main.sass */
 #content-container {
   overflow: hidden;
   *zoom: 1;
   background: white;
 }
 
-/* line 140, ../sass/main.sass */
+/* line 142, ../sass/main.sass */
 #content {
   display: inline;
   float: left;
@@ -507,21 +507,36 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 42, ../sass/main.sass */
+/* line 151, ../sass/main.sass */
 .entry-content p {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
 }
+/* line 153, ../sass/main.sass */
+.entry-content p a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #0059b2;
+}
+/* line 6, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+.entry-content p a:active, .entry-content p a:focus {
+  outline: none;
+}
+/* line 156, ../sass/main.sass */
+.entry-content p a:hover {
+  color: #0063c6;
+}
 
-/* line 151, ../sass/main.sass */
+/* line 160, ../sass/main.sass */
 .parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 157, ../sass/main.sass */
+/* line 166, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -529,7 +544,7 @@ article {
   *zoom: 1;
 }
 
-/* line 162, ../sass/main.sass */
+/* line 171, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -540,13 +555,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 168, ../sass/main.sass */
+/* line 177, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 171, ../sass/main.sass */
+/* line 180, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -558,7 +573,7 @@ article {
   width: 440px;
 }
 
-/* line 177, ../sass/main.sass */
+/* line 186, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -570,7 +585,7 @@ article {
   width: 440px;
 }
 
-/* line 183, ../sass/main.sass */
+/* line 192, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -579,34 +594,34 @@ article {
   color: white;
 }
 
-/* line 191, ../sass/main.sass */
+/* line 200, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 196, ../sass/main.sass */
+/* line 205, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 200, ../sass/main.sass */
+/* line 209, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 202, ../sass/main.sass */
+/* line 211, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 206, ../sass/main.sass */
+/* line 215, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
-/* line 208, ../sass/main.sass */
+/* line 217, ../sass/main.sass */
 #questions ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -616,12 +631,12 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 210, ../sass/main.sass */
+/* line 219, ../sass/main.sass */
 #questions ul li a:hover {
   color: #cccccc;
 }
 
-/* line 42, ../sass/main.sass */
+/* line 223, ../sass/main.sass */
 #answers p {
   color: #868686;
   font-family: Arial, sans-serif;

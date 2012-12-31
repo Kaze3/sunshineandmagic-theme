@@ -17,6 +17,9 @@ $nav-text-colour: #FFFFFF
 
 $main-text-colour: #868686
 
+$link-colour: #0059B2
+$link-hover-colour: lighten($link-colour, 4)
+
 $header-colour-1: #B20000
 $header-colour-2: #CCCCCC
 $header-colour-3: #AAAAAA
@@ -39,11 +42,10 @@ $header-menu-hover: #EEEEEE
     color: $nav-text-colour
 
 @mixin main-text
-  p
-    color: $main-text-colour
-    font:
-      family: $text-font
-    margin-bottom: 24px
+  color: $main-text-colour
+  font:
+    family: $text-font
+  margin-bottom: 24px
 
 .menu-item
   @include menu-link
@@ -146,7 +148,14 @@ article
     bottom: 16px
 
 .entry-content
-  @include main-text
+  p
+    @include main-text
+    a
+      +unstyled-link
+      color: $header-background
+      &:hover
+        color: $link-hover-colour
+
 
 .parent-title
   color: $header-colour-2
@@ -211,4 +220,5 @@ article
           color: $header-colour-2
 
 #answers
-  @include main-text
+  p
+    @include main-text
