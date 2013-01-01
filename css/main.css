@@ -506,13 +506,13 @@ article {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-
-/* line 151, ../sass/main.sass */
-.entry-content p {
+/* line 149, ../sass/main.sass */
+#content p {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
 }
+
 /* line 153, ../sass/main.sass */
 .entry-content p a {
   color: inherit;
