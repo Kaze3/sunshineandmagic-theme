@@ -30,10 +30,13 @@ Template Name: Gallery List
   foreach ($child_gallery_pages as $gallery_page) {
     $ids = gallery_first_image($gallery_page);
     $number_of_images = count($ids);
+    $alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 ?>
   <div class="gallery-summary">
     <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
-    <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>">
+    <a href="<?php echo get_permalink($gallery_page->ID); ?>">
+      <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if(count($alt)) echo "alt=\"" . $alt . "\""; ?>>
+    </a>
     <p>Number of images: <?php echo $number_of_images; ?></p>
   </div>
 <?php } ?>
