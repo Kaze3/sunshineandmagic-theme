@@ -30,8 +30,8 @@ Template Name: Gallery List
     $ids = gallery_first_image($gallery_page);
     $number_of_images = count($ids);
 ?>
-  <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
   <div class="gallery-summary">
+    <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
     <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>">
     <p>Number of images: <?php echo $number_of_images; ?></p>
   </div>
