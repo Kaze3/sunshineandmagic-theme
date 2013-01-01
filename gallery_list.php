@@ -18,6 +18,7 @@ if ($all_pages->have_posts()) {
   $child_gallery_pages = get_page_children($post->ID, $all_pages);
 
   foreach ($child_gallery_pages as $gallery_page) {
+    echo($gallery_page->ID);
     echo(get_the_title($gallery_page->ID));
   }
 }
