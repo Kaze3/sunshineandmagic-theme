@@ -642,3 +642,8 @@ article {
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
 }
+
+/* line 227, ../sass/main.sass */
+.gallery-summary img {
+  float: left;
+}
