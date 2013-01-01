@@ -15,14 +15,14 @@ Template Name: Gallery List
 
       for ($i = 0; $i < $count; $i++) {
         $atts = shortcode_parse_atts($matches[3][$i]);
-
+        echo $matches[3][$i];
         if (isset($atts[ids])) {
           $attachment_ids = explode(',', $atts[ids]);
           $ids = array_merge($ids, $attachment_ids);
         }
       }
     }
-    echo $ids;
+    
     return $ids;
   }  
 ?>
