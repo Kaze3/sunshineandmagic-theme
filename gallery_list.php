@@ -10,7 +10,7 @@ Template Name: Gallery List
       $array_id = explode(",", $ids[1]);
     }
 
-    return $array_id[1];
+    return $array_id[0];
   }  
 ?>
 
