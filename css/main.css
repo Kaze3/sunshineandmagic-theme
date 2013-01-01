@@ -643,7 +643,11 @@ article {
   margin-bottom: 24px;
 }
 
-/* line 227, ../sass/main.sass */
+/* line 226, ../sass/main.sass */
+.gallery-summary {
+  clear: both;
+}
+/* line 228, ../sass/main.sass */
 .gallery-summary img {
   float: left;
 }
