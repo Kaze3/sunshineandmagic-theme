@@ -13,7 +13,7 @@ Template Name: Gallery List
     </header>
 
 <?php
-  $args = array('post_type' => 'page', 'post_parent' => $post->ID)
+  $args = array('post_type' => 'page', 'post_parent' => $post->ID);
   $child_gallery_pages = get_posts($args);
 
   foreach ($child_gallery_pages as $gallery_page) {
