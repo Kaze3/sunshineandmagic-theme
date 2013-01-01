@@ -13,15 +13,13 @@ Template Name: Gallery List
     </header>
 
 <?php
-$all_pages = new WP_Query(array('post_type' => 'page'));
-if ($all_pages->have_posts()) {
-  $child_gallery_pages = get_page_children($post->ID, $all_pages);
+  $args = array('post_type' => 'page', 'post_parent' => $post->ID)
+  $child_gallery_pages = get_posts($args);
 
   foreach ($child_gallery_pages as $gallery_page) {
     echo($gallery_page->ID);
     echo(get_the_title($gallery_page->ID));
   }
-}
 ?>
 
 </div> <!-- content -->
