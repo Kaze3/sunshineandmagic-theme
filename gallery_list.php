@@ -24,7 +24,7 @@ Template Name: Gallery List
     <div class="entry-content">
 
 <?php
-  $args = array('post_type' => 'page', 'post_parent' => $post->ID);
+  $args = array('post_type' => 'page', 'post_parent' => $post->ID, 'order' => 'ASC');
   $child_gallery_pages = get_posts($args);
 
   foreach ($child_gallery_pages as $gallery_page) {
