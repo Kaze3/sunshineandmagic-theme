@@ -11,6 +11,7 @@ Template Name: FAQ
     <header class="entry-header">
       <h1 class="entry-title">FAQs</h1>
     </header>
+    <div class="entry-content">
     <div id="questions">
 
 <?php
@@ -71,6 +72,7 @@ foreach ($queries as $my_query) {
 <?php } ?>  
 
 </div> <!-- answers -->
+</div> <!-- entry-content -->
 </div> <!-- content -->
 </div> <!-- content-container -->
 

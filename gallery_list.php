@@ -21,6 +21,7 @@ Template Name: Gallery List
     <header class="entry-header">
       <h1 class="entry-title">Gallery</h1>
     </header>
+    <div class="entry-content">
 
 <?php
   $args = array('post_type' => 'page', 'post_parent' => $post->ID);
@@ -37,7 +38,8 @@ Template Name: Gallery List
   </div>
 <?php } ?>
 
-</div> <!-- content -->
+    </div> <!-- entry-content -->
+  </div> <!-- content -->
 </div> <!-- content-container -->
 
 <?php get_footer(); ?>
