@@ -35,7 +35,7 @@ Template Name: Gallery List
   <div class="gallery-summary">
     <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
     <a href="<?php echo get_permalink($gallery_page->ID); ?>">
-      <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if (count($alt)) echo 'alt=\"' . $alt . '\"'; ?>>
+      <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if ($alt) echo 'alt="' . $alt . '"'; ?>>
     </a>
     <p>Number of images: <?php echo $number_of_images; ?></p>
   </div>
