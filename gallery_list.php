@@ -13,6 +13,9 @@ Template Name: Gallery List
     if (preg_match_all('/'. $pattern .'/s', $my_post->post_content, $matches)) {
       $count=count($matches[3]);
 
+      for ($j=0; $j<count($matches); $j)
+        echo $matches[$j];
+
       for ($i = 0; $i < $count; $i++) {
         $atts = shortcode_parse_atts($matches[3][$i]);
         echo $matches[3][$i];
@@ -22,7 +25,7 @@ Template Name: Gallery List
         }
       }
     }
-    
+
     return $ids;
   }  
 ?>
