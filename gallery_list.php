@@ -6,27 +6,11 @@ Template Name: Gallery List
 
 <?php 
   function gallery_first_image($my_post){
-    $pattern = get_shortcode_regex();
-    $attachment_ids = array();
-    $ids = array();
-
-    if (preg_match_all('/'. $pattern .'/s', $my_post->post_content, $matches)) {
-      $count=count($matches[3]);
-
-      for ($j=0; $j<count($matches); $j++)
-        echo $matches[$j];
-
-      for ($i = 0; $i < $count; $i++) {
-        $atts = shortcode_parse_atts($matches[3][$i]);
-        echo $matches[3][$i];
-        if (isset($atts[ids])) {
-          $attachment_ids = explode(',', $atts[ids]);
-          $ids = array_merge($ids, $attachment_ids);
-        }
-      }
+    if (preg_match('/\[gallery.*ids=.(.*).\]/', $my_post->post_content, $ids)) {
+      $array_id = explode(",", $ids[1]);
     }
 
-    return $ids;
+    return $array_id[1];
   }  
 ?>
 
