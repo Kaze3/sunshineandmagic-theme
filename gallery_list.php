@@ -22,7 +22,7 @@ Template Name: Gallery List
         }
       }
     }
-
+    echo $ids;
     return $ids;
   }  
 ?>
@@ -42,7 +42,7 @@ Template Name: Gallery List
   foreach ($child_gallery_pages as $gallery_page) {
 ?>
   <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
-  <p><?php echo wp_get_attachment_thumb_url(gallery_first_image($gallery_page)[0]); ?></p>
+  <p><?php echo wp_get_attachment_thumb_url(gallery_first_image($gallery_page)); ?></p>
 <?php } ?>
 
 </div> <!-- content -->
