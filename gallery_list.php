@@ -10,7 +10,7 @@ Template Name: Gallery List
       $array_id = explode(",", $ids[1]);
     }
 
-    return $array_id[0];
+    return $array_id;
   }  
 ?>
 
@@ -27,9 +27,14 @@ Template Name: Gallery List
   $child_gallery_pages = get_posts($args);
 
   foreach ($child_gallery_pages as $gallery_page) {
+    $ids = gallery_first_image($gallery_page);
+    $number_of_images = count($ids);
 ?>
   <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
-  <p><?php echo wp_get_attachment_thumb_url(gallery_first_image($gallery_page)); ?></p>
+  <p>
+    <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>">
+    Number of images: <?php echo $number_of_images; ?>
+  </p>
 <?php } ?>
 
 </div> <!-- content -->
