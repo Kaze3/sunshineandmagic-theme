@@ -643,4 +643,6 @@ article {
 /* line 223, ../sass/main.sass */
 .gallery-summary img {
   float: left;
+  border: 2px solid #cfcfcf;
+  margin: 0 10px 10px 0;
 }
