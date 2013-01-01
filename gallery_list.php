@@ -5,28 +5,26 @@ Template Name: Gallery List
 ?>
 
 <?php 
-  function gallery_first_image($post_id){
- 
-    global $post;
- 
-    $args = array(
-        'post_type'   => 'attachment',
-        'numberposts' => 1,
-        'post_parent' => $post_id,
-        'order' => 'ASC',
-        'orderby' => 'menu_order',
-        'post_mime_type' => 'image'
-        );
- 
-    $attachments = get_posts( $args );
- 
-    if ( $attachments ) {
-        foreach ( $attachments as $attachment ) {
-            return wp_get_attachment_url( $attachment->ID );
+  function gallery_first_image($my_post){
+    $pattern = get_shortcode_regex();
+    $attachment_ids = array();
+    $ids = array();
+
+    if (preg_match_all('/'. $pattern .'/s', $my_post->post_content, $matches)) {
+      $count=count($matches[3]);
+
+      for ($i = 0; $i < $count; $i++) {
+        $atts = shortcode_parse_atts($matches[3][$i]);
+
+        if (isset($atts[ids])) {
+          $attachment_ids = explode(',', $atts[ids]);
+          $ids = array_merge($ids, $attachment_ids);
         }
+      }
     }
-    return false;
-  }
+
+    return $ids;
+  }  
 ?>
 
 <?php get_header(); ?>
@@ -44,7 +42,7 @@ Template Name: Gallery List
   foreach ($child_gallery_pages as $gallery_page) {
 ?>
   <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
-  <p><?php echo gallery_first_image($gallery_page->ID); ?></p>
+  <p><?php echo wp_get_attachment_thumb_url(gallery_first_image($gallery_page)[0]); ?></p>
 <?php } ?>
 
 </div> <!-- content -->
