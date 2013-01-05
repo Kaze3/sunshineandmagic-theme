@@ -537,16 +537,17 @@ article {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
+  margin: 0 20px 0 12px;
 }
 
-/* line 163, ../sass/main.sass */
+/* line 164, ../sass/main.sass */
 .parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 169, ../sass/main.sass */
+/* line 170, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -554,7 +555,7 @@ article {
   *zoom: 1;
 }
 
-/* line 174, ../sass/main.sass */
+/* line 175, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -565,13 +566,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 180, ../sass/main.sass */
+/* line 181, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 183, ../sass/main.sass */
+/* line 184, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -583,7 +584,7 @@ article {
   width: 440px;
 }
 
-/* line 189, ../sass/main.sass */
+/* line 190, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -595,7 +596,7 @@ article {
   width: 440px;
 }
 
-/* line 195, ../sass/main.sass */
+/* line 196, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -604,34 +605,34 @@ article {
   color: white;
 }
 
-/* line 203, ../sass/main.sass */
+/* line 204, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 208, ../sass/main.sass */
+/* line 209, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 212, ../sass/main.sass */
+/* line 213, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 214, ../sass/main.sass */
+/* line 215, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 218, ../sass/main.sass */
+/* line 219, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
-/* line 220, ../sass/main.sass */
+/* line 221, ../sass/main.sass */
 #questions ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -641,16 +642,16 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 222, ../sass/main.sass */
+/* line 223, ../sass/main.sass */
 #questions ul li a:hover {
   color: #cccccc;
 }
 
-/* line 225, ../sass/main.sass */
+/* line 226, ../sass/main.sass */
 .gallery-summary {
   clear: both;
 }
-/* line 227, ../sass/main.sass */
+/* line 228, ../sass/main.sass */
 .gallery-summary img {
   float: left;
   border: 2px solid #cfcfcf;
