@@ -530,7 +530,7 @@ article {
 }
 /* line 158, ../sass/main.sass */
 .entry-content ul {
-  list-style: circle inside;
+  list-style: circle outside;
 }
 /* line 160, ../sass/main.sass */
 .entry-content ul li {
