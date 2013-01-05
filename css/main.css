@@ -531,23 +531,24 @@ article {
 /* line 158, ../sass/main.sass */
 .entry-content ul {
   list-style: circle inside;
+  margin: 0 30px;
 }
-/* line 160, ../sass/main.sass */
+/* line 161, ../sass/main.sass */
 .entry-content ul li {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
-  margin: 0 20px 0 12px;
+  margin-bottom: 12px;
 }
 
-/* line 164, ../sass/main.sass */
+/* line 165, ../sass/main.sass */
 .parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 170, ../sass/main.sass */
+/* line 171, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -555,7 +556,7 @@ article {
   *zoom: 1;
 }
 
-/* line 175, ../sass/main.sass */
+/* line 176, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -566,13 +567,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 181, ../sass/main.sass */
+/* line 182, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 184, ../sass/main.sass */
+/* line 185, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -584,7 +585,7 @@ article {
   width: 440px;
 }
 
-/* line 190, ../sass/main.sass */
+/* line 191, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -596,7 +597,7 @@ article {
   width: 440px;
 }
 
-/* line 196, ../sass/main.sass */
+/* line 197, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -605,34 +606,34 @@ article {
   color: white;
 }
 
-/* line 204, ../sass/main.sass */
+/* line 205, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 209, ../sass/main.sass */
+/* line 210, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 213, ../sass/main.sass */
+/* line 214, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 215, ../sass/main.sass */
+/* line 216, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle inside;
 }
-/* line 219, ../sass/main.sass */
+/* line 220, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
-/* line 221, ../sass/main.sass */
+/* line 222, ../sass/main.sass */
 #questions ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -642,16 +643,16 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 223, ../sass/main.sass */
+/* line 224, ../sass/main.sass */
 #questions ul li a:hover {
   color: #cccccc;
 }
 
-/* line 226, ../sass/main.sass */
+/* line 227, ../sass/main.sass */
 .gallery-summary {
   clear: both;
 }
-/* line 228, ../sass/main.sass */
+/* line 229, ../sass/main.sass */
 .gallery-summary img {
   float: left;
   border: 2px solid #cfcfcf;
