@@ -4,7 +4,7 @@ h1,
 h2,
 h3,
 h4,
-table.easy-table thead, h2, h3, h4, table.easy-table thead, h3, h4, table.easy-table thead, h4, h5, h6, p, blockquote, pre,
+table.easy-table th, h2, h3, h4, table.easy-table th, h3, h4, table.easy-table th, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -348,7 +348,7 @@ body {
 }
 
 /* line 65, ../sass/main.sass */
-h1, h2, h3, h4, table.easy-table thead {
+h1, h2, h3, h4, table.easy-table th {
   color: #b20000;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 2.25em;
@@ -358,13 +358,13 @@ h1, h2, h3, h4, table.easy-table thead {
 }
 
 /* line 74, ../sass/main.sass */
-h2, h3, h4, table.easy-table thead {
+h2, h3, h4, table.easy-table th {
   font-size: 1.75em;
   margin-bottom: 14px;
 }
 
 /* line 79, ../sass/main.sass */
-h3, h4, table.easy-table thead {
+h3, h4, table.easy-table th {
   font-size: 1.5em;
 }
 
@@ -404,7 +404,7 @@ article {
   background: #0059b2;
 }
 /* line 104, ../sass/main.sass */
-#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header table.easy-table thead a, table.easy-table #header thead a {
+#header h1 a, #header h2 a, #header h3 a, #header h4 a, #header table.easy-table th a, table.easy-table #header th a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
