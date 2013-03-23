@@ -34,6 +34,7 @@ Template Name: Gallery List
     $ids = gallery_first_image($gallery_page);
     $number_of_images = count($ids);
     $alt = get_post_meta($ids[0], '_wp_attachment_image_alt', true);
+    $image_attributes = wp_get_attachment_image_src($ids[0], 'medium');
     $gallery_id = $gallery_page->ID;
     $description = get_post_custom_values('gallery-description', $gallery_id);
 
@@ -47,7 +48,7 @@ Template Name: Gallery List
   <div class="gallery-summary <?php echo $tags ?>">
     <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
     <a href="<?php echo get_permalink($gallery_id); ?>" title="<?php echo get_the_title($gallery_id); ?>">
-      <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if ($alt) echo 'alt="' . $alt . '"'; ?>>
+      <img src="<?php echo $image_attributes[0]; ?>" <?php if ($alt) echo 'alt="' . $alt . '"'; ?>>
     </a>
     <div class="gallery-info">
       <p><?php echo $description[0]; ?></p>
