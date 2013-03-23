@@ -683,6 +683,11 @@ small {
 }
 
 /* line 256, ../sass/main.sass */
+span.wpcf7-list-item {
+  margin-left: 0;
+}
+
+/* line 259, ../sass/main.sass */
 span.wpcf7-list-item-label {
   margin-right: 5px;
 }
