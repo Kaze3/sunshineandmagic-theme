@@ -650,18 +650,23 @@ article {
 }
 
 /* line 233, ../sass/main.sass */
+.gallery-summary img {
+  margin-bottom: 16px;
+}
+
+/* line 237, ../sass/main.sass */
 table.easy-table th {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   color: #b20000;
   font-weight: normal;
   font-size: 1.5em;
 }
-/* line 238, ../sass/main.sass */
+/* line 242, ../sass/main.sass */
 table.easy-table td {
   color: #868686;
 }
 
-/* line 241, ../sass/main.sass */
+/* line 245, ../sass/main.sass */
 small {
   font-size: 0.8em;
 }
