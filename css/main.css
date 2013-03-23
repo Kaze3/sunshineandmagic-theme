@@ -675,3 +675,9 @@ small {
 #gallery-1 img:hover {
   border-color: #eeeeee;
 }
+
+/* line 252, ../sass/main.sass */
+.form-label {
+  width: 10em;
+  display: inline-block;
+}
