@@ -679,10 +679,10 @@ small {
 /* line 252, ../sass/main.sass */
 .form-label {
   width: 10em;
-  display: inline-block;
+  float: left;
 }
 
 /* line 256, ../sass/main.sass */
-span.wpcf7-list-item {
-  display: block;
+span.wpcf7-list-item-label {
+  margin-right: 5px;
 }
