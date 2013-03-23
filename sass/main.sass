@@ -261,9 +261,12 @@ span.wpcf7-list-item-label
 
 .sbc-calendar
   table
-    border-color: $main-text-colour transparent transparent transparent
-    tr
-      td
-        color: $main-text-colour
-      th
-        color: $main-text-colour
+    border-top-color: $main-text-colour !important
+    thead
+      tr    
+        th
+          color: $main-text-colour
+    tbody
+      tr   
+        td
+          color: $main-text-colour

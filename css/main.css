@@ -694,13 +694,13 @@ span.wpcf7-list-item-label {
 
 /* line 263, ../sass/main.sass */
 .sbc-calendar table {
-  border-color: #868686 transparent transparent transparent;
+  border-top-color: #868686 !important;
 }
-/* line 266, ../sass/main.sass */
-.sbc-calendar table tr td {
+/* line 267, ../sass/main.sass */
+.sbc-calendar table thead tr th {
   color: #868686;
 }
-/* line 268, ../sass/main.sass */
-.sbc-calendar table tr th {
+/* line 271, ../sass/main.sass */
+.sbc-calendar table tbody tr td {
   color: #868686;
 }
