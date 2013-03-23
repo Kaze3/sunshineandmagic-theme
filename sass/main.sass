@@ -47,6 +47,10 @@ $header-menu-hover: #EEEEEE
     family: $text-font
   margin-bottom: 24px
 
+@mixin hover-border
+  &:hover
+    border-color: $site-background
+
 .menu-item
   @include menu-link
 
@@ -241,3 +245,8 @@ table.easy-table
 
 small
   font-size: 0.8em
+
+.gallery-icon
+  a
+    img
+      +hover-border
