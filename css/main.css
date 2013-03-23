@@ -681,3 +681,8 @@ small {
   width: 10em;
   display: inline-block;
 }
+
+/* line 256, ../sass/main.sass */
+span.wpcf7-list-item {
+  display: block;
+}
