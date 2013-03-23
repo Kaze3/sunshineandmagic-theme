@@ -26,15 +26,24 @@ Template Name: Gallery List
 <?php
   $args = array('post_type' => 'page', 'post_parent' => $post->ID, 'order' => 'ASC');
   $child_gallery_pages = get_posts($args);
+  $count = 0;
 
   foreach ($child_gallery_pages as $gallery_page) {
+    $count += 1;
     $ids = gallery_first_image($gallery_page);
     $number_of_images = count($ids);
     $alt = get_post_meta($ids[0], '_wp_attachment_image_alt', true);
     $gallery_id = $gallery_page->ID;
     $description = get_post_custom_values('gallery-description', $gallery_id);
+
+    if ($count % 2 == 0) {
+      $tags = 'grid_6 omega';
+    } else {
+      $tags = 'grid_6 alpha';
+    }
+
 ?>
-  <div class="gallery-summary">
+  <div class="gallery-summary <?php echo $tags ?>">
     <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
     <a href="<?php echo get_permalink($gallery_id); ?>" title="<?php echo get_the_title($gallery_id); ?>">
       <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if ($alt) echo 'alt="' . $alt . '"'; ?>>
