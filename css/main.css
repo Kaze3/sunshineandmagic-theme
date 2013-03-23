@@ -704,3 +704,9 @@ span.wpcf7-list-item-label {
 .sbc-calendar table tbody tr td {
   color: #868686;
 }
+
+/* line 274, ../sass/main.sass */
+.sbc-navigation {
+  font-size: 1.4em;
+  font-family: "Bebas Neue Regular", Arial, sans-serif;
+}
