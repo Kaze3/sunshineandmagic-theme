@@ -31,13 +31,17 @@ Template Name: Gallery List
     $ids = gallery_first_image($gallery_page);
     $number_of_images = count($ids);
     $alt = get_post_meta($ids[0], '_wp_attachment_image_alt', true);
+    $gallery_id = $gallery_page->ID;
 ?>
   <div class="gallery-summary">
     <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
-    <a href="<?php echo get_permalink($gallery_page->ID); ?>" title="<?php echo get_the_title($gallery_page->ID); ?>">
+    <a href="<?php echo get_permalink($gallery_id); ?>" title="<?php echo get_the_title($gallery_id); ?>">
       <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if ($alt) echo 'alt="' . $alt . '"'; ?>>
     </a>
-    <p>Number of images: <?php echo $number_of_images; ?></p>
+    <div class="gallery-info">
+      <p><?php echo get_post_custom_values('gallery-description', $gallery_id); ?></p>
+      <p>Number of images: <?php echo $number_of_images; ?></p>
+    </div>
   </div>
 <?php } ?>
 
