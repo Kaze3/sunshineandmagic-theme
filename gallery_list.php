@@ -22,6 +22,7 @@ Template Name: Gallery List
       <h1 class="entry-title">Gallery</h1>
     </header>
     <div class="entry-content">
+    <div class="container_12">
 
 <?php
   $args = array('post_type' => 'page', 'post_parent' => $post->ID, 'order' => 'ASC');
@@ -43,20 +44,19 @@ Template Name: Gallery List
     }
 
 ?>
-  <div class="container_12">
-    <div class="gallery-summary <?php echo $tags ?>">
-      <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
-      <a href="<?php echo get_permalink($gallery_id); ?>" title="<?php echo get_the_title($gallery_id); ?>">
-        <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if ($alt) echo 'alt="' . $alt . '"'; ?>>
-      </a>
-      <div class="gallery-info">
-        <p><?php echo $description[0]; ?></p>
-        <p>Number of images: <?php echo $number_of_images; ?></p>
-      </div>
+  <div class="gallery-summary <?php echo $tags ?>">
+    <h2><?php echo get_the_title($gallery_page->ID); ?></h2>
+    <a href="<?php echo get_permalink($gallery_id); ?>" title="<?php echo get_the_title($gallery_id); ?>">
+      <img src="<?php echo wp_get_attachment_thumb_url($ids[0]); ?>" <?php if ($alt) echo 'alt="' . $alt . '"'; ?>>
+    </a>
+    <div class="gallery-info">
+      <p><?php echo $description[0]; ?></p>
+      <p>Number of images: <?php echo $number_of_images; ?></p>
     </div>
   </div>
 <?php } ?>
 
+    </div> <!-- container_12 -->
     </div> <!-- entry-content -->
   </div> <!-- content -->
 </div> <!-- content-container -->
