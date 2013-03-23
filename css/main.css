@@ -686,3 +686,21 @@ small {
 span.wpcf7-list-item-label {
   margin-right: 5px;
 }
+
+/* line 259, ../sass/main.sass */
+.sbc-calendar-wrapper {
+  color: #868686;
+}
+
+/* line 263, ../sass/main.sass */
+.sbc-calendar table {
+  border-color: #868686 transparent transparent transparent;
+}
+/* line 266, ../sass/main.sass */
+.sbc-calendar table tr td {
+  color: #868686;
+}
+/* line 268, ../sass/main.sass */
+.sbc-calendar table tr th {
+  color: #868686;
+}
