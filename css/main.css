@@ -673,6 +673,6 @@ small {
 }
 
 /* line 51, ../sass/main.sass */
-.gallery-icon a img:hover {
+#gallery-1 img:hover {
   border-color: #eeeeee;
 }
