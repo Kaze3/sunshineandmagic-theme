@@ -90,7 +90,7 @@ function my_mce_before_init_insert_formats( $init_array ) {
     // Each array child is a format with it's own settings
     array(  
       'title' => 'Small Print',  
-      'selector' => 'small',
+      'block' => 'small',
     ),
   );  
   // Insert the array, JSON ENCODED, into 'style_formats'
