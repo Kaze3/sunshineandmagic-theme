@@ -628,7 +628,7 @@ article {
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
-  list-style: circle inside;
+  list-style: circle outside;
 }
 /* line 225, ../sass/main.sass */
 #questions ul li {
