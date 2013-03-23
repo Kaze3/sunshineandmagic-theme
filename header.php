@@ -22,7 +22,7 @@
     $id = ($parents) ? $parents[count($parents)-1]: $post->ID;
   ?>
 
-  <?php if (!is_front_page()) { ?>
+  <?php if (!is_front_page() && !is_404()) { ?>
   <div id="header-submenu">
     <ul>
       <?php wp_list_pages('child_of=' . $id . '&title_li='); ?>
