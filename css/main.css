@@ -671,3 +671,8 @@ table.easy-table th {
 table.easy-table td {
   color: #868686;
 }
+
+/* line 244, ../sass/main.sass */
+small {
+  font-size: 0.85em;
+}
