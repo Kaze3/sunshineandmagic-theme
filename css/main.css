@@ -541,15 +541,19 @@ article {
   margin-bottom: 24px;
   margin-bottom: 12px;
 }
+/* line 169, ../sass/main.sass */
+.entry-content img {
+  border: 1px solid #868686;
+}
 
-/* line 170, ../sass/main.sass */
+/* line 172, ../sass/main.sass */
 .parent-title {
   color: #cccccc;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   font-size: 1.125em;
 }
 
-/* line 176, ../sass/main.sass */
+/* line 178, ../sass/main.sass */
 #footer-container {
   background: #0059b2;
   clear: both;
@@ -557,7 +561,7 @@ article {
   *zoom: 1;
 }
 
-/* line 181, ../sass/main.sass */
+/* line 183, ../sass/main.sass */
 #footer {
   display: inline;
   float: left;
@@ -568,13 +572,13 @@ article {
   margin-bottom: 16px;
 }
 
-/* line 187, ../sass/main.sass */
+/* line 189, ../sass/main.sass */
 #footer-items {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 190, ../sass/main.sass */
+/* line 192, ../sass/main.sass */
 #footer-menu {
   display: inline;
   float: left;
@@ -586,7 +590,7 @@ article {
   width: 440px;
 }
 
-/* line 196, ../sass/main.sass */
+/* line 198, ../sass/main.sass */
 #footer-widget {
   display: inline;
   float: left;
@@ -598,7 +602,7 @@ article {
   width: 440px;
 }
 
-/* line 202, ../sass/main.sass */
+/* line 204, ../sass/main.sass */
 #colophon {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -607,34 +611,34 @@ article {
   color: white;
 }
 
-/* line 210, ../sass/main.sass */
+/* line 212, ../sass/main.sass */
 #menu-footer-menu {
   padding-right: 4px;
   text-align: right;
   border-right: 2px solid white;
 }
 
-/* line 215, ../sass/main.sass */
+/* line 217, ../sass/main.sass */
 .widget_zilla_social_widget {
   list-style: none;
   margin-top: 5px;
 }
 
-/* line 219, ../sass/main.sass */
+/* line 221, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 221, ../sass/main.sass */
+/* line 223, ../sass/main.sass */
 #questions ul {
   color: #aaaaaa;
   margin-bottom: 16px;
   list-style: circle outside;
 }
-/* line 225, ../sass/main.sass */
+/* line 227, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
-/* line 227, ../sass/main.sass */
+/* line 229, ../sass/main.sass */
 #questions ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -644,29 +648,29 @@ article {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 229, ../sass/main.sass */
+/* line 231, ../sass/main.sass */
 #questions ul li a:hover {
   color: #cccccc;
 }
 
-/* line 233, ../sass/main.sass */
+/* line 235, ../sass/main.sass */
 .gallery-summary img {
   margin-bottom: 16px;
 }
 
-/* line 237, ../sass/main.sass */
+/* line 239, ../sass/main.sass */
 table.easy-table th {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   color: #b20000;
   font-weight: normal;
   font-size: 1.5em;
 }
-/* line 242, ../sass/main.sass */
+/* line 244, ../sass/main.sass */
 table.easy-table td {
   color: #868686;
 }
 
-/* line 245, ../sass/main.sass */
+/* line 247, ../sass/main.sass */
 small {
   font-size: 0.8em;
 }
@@ -676,36 +680,36 @@ small {
   border-color: #eeeeee;
 }
 
-/* line 252, ../sass/main.sass */
+/* line 254, ../sass/main.sass */
 .form-label {
   width: 10em;
   float: left;
 }
 
-/* line 256, ../sass/main.sass */
+/* line 258, ../sass/main.sass */
 span.wpcf7-list-item-label {
   margin-right: 5px;
 }
 
-/* line 259, ../sass/main.sass */
+/* line 261, ../sass/main.sass */
 .sbc-calendar-wrapper {
   color: #868686;
 }
 
-/* line 263, ../sass/main.sass */
+/* line 265, ../sass/main.sass */
 .sbc-calendar table {
   border-top-color: #868686 !important;
 }
-/* line 267, ../sass/main.sass */
+/* line 269, ../sass/main.sass */
 .sbc-calendar table thead tr th {
   color: #868686;
 }
-/* line 271, ../sass/main.sass */
+/* line 273, ../sass/main.sass */
 .sbc-calendar table tbody tr td {
   color: #868686;
 }
 
-/* line 274, ../sass/main.sass */
+/* line 276, ../sass/main.sass */
 .sbc-navigation {
   font-size: 1.4em;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
