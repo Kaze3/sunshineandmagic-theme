@@ -329,18 +329,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: -880px;
 }
 
-/* line 68, ../sass/main.sass */
+/* line 69, ../sass/main.sass */
 .container_12 {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 71, ../sass/main.sass */
+/* line 72, ../sass/main.sass */
 body {
   background: #eeeeee;
   font-size: 100%;
   font-family: Arial, sans-serif;
-  line-height: 1.2em;
 }
 
 /* line 78, ../sass/main.sass */
@@ -528,6 +527,7 @@ article {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
+  line-height: 1.4em;
 }
 /* line 161, ../sass/main.sass */
 .entry-content p a {
@@ -554,6 +554,7 @@ article {
   color: #868686;
   font-family: Arial, sans-serif;
   margin-bottom: 24px;
+  line-height: 1.4em;
   margin-bottom: 12px;
 }
 
@@ -686,7 +687,7 @@ small {
   font-size: 0.8em;
 }
 
-/* line 60, ../sass/main.sass */
+/* line 61, ../sass/main.sass */
 #gallery-1 img:hover {
   border-color: #eeeeee;
 }
