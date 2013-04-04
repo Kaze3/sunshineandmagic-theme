@@ -47,6 +47,15 @@ $header-menu-hover: #EEEEEE
     family: $text-font
   margin-bottom: 24px
 
+@mixin header-text
+  color: $header-colour-1
+  font:
+    family: $title-font
+    size: 2.25em
+  line-height: 1.125em
+  margin-bottom: 20px
+  font-weight: normal
+
 @mixin hover-border
   &:hover
     border-color: $site-background
@@ -64,28 +73,22 @@ body
   font:
     size: 100%
     family: $text-font
-  line-height: 1.125em
+  line-height: 1.2em
   
 h1
-  color: $header-colour-1
-  font:
-    family: $title-font
-    size: 2.25em
-  line-height: 1.125em
-  margin-bottom: 20px
-  font-weight: normal
+  @include header-text
 
 h2
-  @extend h1
+  @include header-text
   font-size: 1.75em
   margin-bottom: 14px
 
 h3
-  @extend h2
+  @include header-text
   font-size: 1.5em
 
 h4
-  @extend h3
+  @include header-text
   font-size: 1.25em
   color: $main-text-colour
 
