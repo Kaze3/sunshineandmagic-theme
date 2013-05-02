@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
-  <title><? wp_title('') . " | " . bloginfo('name') . " - " . bloginfo('description'); ?></title>
+  <title><? wp_title('|', true, 'right') . bloginfo('name') . " - " . bloginfo('description'); ?></title>
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
   <?php wp_head(); ?>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
