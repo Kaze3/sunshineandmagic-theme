@@ -726,7 +726,8 @@ span.wpcf7-list-item-label {
   font-size: 1.4em;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
+
 /* line 281, ../sass/main.sass */
-.sbc-navigation img#wpstats {
+img#wpstats {
   display: none;
 }
