@@ -33,6 +33,11 @@ Template Name: Gallery List
     $count += 1;
     $ids = gallery_first_image($gallery_page);
     $number_of_images = count($ids);
+
+    if ($number_of_images < 1) {
+      continue;
+    }
+
     $alt = get_post_meta($ids[0], '_wp_attachment_image_alt', true);
     $image_attributes = wp_get_attachment_image_src($ids[0], 'medium');
     $gallery_id = $gallery_page->ID;
