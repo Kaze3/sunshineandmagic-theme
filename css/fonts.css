@@ -1,41 +1,5 @@
 @font-face {
-  font-family: "Aubrey Regular";
-  src: url('../fonts/aubrey/aubrey.eot');
-  src: url('../fonts/aubrey/aubrey.eot?#iefix') format('eot'), url('../fonts/aubrey/aubrey.woff') format('woff'), url('../fonts/aubrey/aubrey.ttf') format('truetype'), url('../fonts/aubrey/aubrey.svg') format('svg');
-}
-
-@font-face {
   font-family: "Bebas Neue Regular";
-  src: url('../fonts/bebasneue/bebasneue.eot');
-  src: url('../fonts/bebasneue/bebasneue.eot?#iefix') format('eot'), url('../fonts/bebasneue/bebasneue.woff') format('woff'), url('../fonts/bebasneue/bebasneue.ttf') format('truetype'), url('../fonts/bebasneue/bebasneue.svg') format('svg');
-}
-
-@font-face {
-  font-family: "League Gothic";
-  src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot');
-  src: url('../fonts/leaguegothic/leaguegothic-regular-webfont.eot?#iefix') format('eot'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic/leaguegothic-regular-webfont.svg') format('svg');
-}
-
-@font-face {
-  font-family: "Arimo Regular";
-  src: url('../fonts/arimo/Arimo-Regular-Latin-webfont.eot');
-  src: url('../fonts/arimo/Arimo-Regular-Latin-webfont.eot?#iefix') format('eot'), url('../fonts/arimo/Arimo-Regular-Latin-webfont.woff') format('woff'), url('../fonts/arimo/Arimo-Regular-Latin-webfont.ttf') format('truetype'), url('../fonts/arimo/Arimo-Regular-Latin-webfont.svg') format('svg');
-}
-
-@font-face {
-  font-family: "Arimo Bold";
-  src: url('../fonts/arimo/Arimo-Bold-Latin-webfont.eot');
-  src: url('../fonts/arimo/Arimo-Bold-Latin-webfont.eot?#iefix') format('eot'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.woff') format('woff'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.ttf') format('truetype'), url('../fonts/arimo/Arimo-Bold-Latin-webfont.svg') format('svg');
-}
-
-@font-face {
-  font-family: "Oswald Regular";
-  src: url('../fonts/oswald/Oswald-Regular-webfont.eot');
-  src: url('../fonts/oswald/Oswald-Regular-webfont.eot?#iefix') format('eot'), url('../fonts/oswald/Oswald-Regular-webfont.woff') format('woff'), url('../fonts/oswald/Oswald-Regular-webfont.ttf') format('truetype'), url('../fonts/oswald/Oswald-Regular-webfont.svg') format('svg');
-}
-
-@font-face {
-  font-family: "Oswald Bold";
-  src: url('../fonts/oswald/Oswald-Bold-webfont.eot');
-  src: url('../fonts/oswald/Oswald-Bold-webfont.eot?#iefix') format('eot'), url('../fonts/oswald/Oswald-Bold-webfont.woff') format('woff'), url('../fonts/oswald/Oswald-Bold-webfont.ttf') format('truetype'), url('../fonts/oswald/Oswald-Bold-webfont.svg') format('svg');
+  src: url('../fonts/bebasneue/bebasneue.eot?1412172098');
+  src: url('../fonts/bebasneue/bebasneue.eot?&1412172098#iefix') format('embedded-opentype'), url('../fonts/bebasneue/bebasneue.woff?1412172098') format('woff'), url('../fonts/bebasneue/bebasneue.ttf?1412172098') format('truetype'), url('../fonts/bebasneue/bebasneue.svg?1412172098') format('svg');
 }
