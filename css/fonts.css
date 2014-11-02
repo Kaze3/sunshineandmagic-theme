@@ -1,5 +1,10 @@
 @font-face {
   font-family: "Bebas Neue Regular";
-  src: url('../fonts/bebasneue/bebasneue.eot?1412172098');
-  src: url('../fonts/bebasneue/bebasneue.eot?&1412172098#iefix') format('embedded-opentype'), url('../fonts/bebasneue/bebasneue.woff?1412172098') format('woff'), url('../fonts/bebasneue/bebasneue.ttf?1412172098') format('truetype'), url('../fonts/bebasneue/bebasneue.svg?1412172098') format('svg');
+  src: url('../fonts/bebasneue/bebasneue.eot?1414938501');
+  src: url('../fonts/bebasneue/bebasneue.eot?&1414938501#iefix') format('embedded-opentype'), url('../fonts/bebasneue/bebasneue.woff?1414938501') format('woff'), url('../fonts/bebasneue/bebasneue.ttf?1414938501') format('truetype'), url('../fonts/bebasneue/bebasneue.svg?1414938501') format('svg');
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url('../fonts/lato/lato-regular-webfont.eot?1414955808');
+  src: url('../fonts/lato/lato-regular-webfont.eot?&1414955808#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular-webfont.woff?1414955808') format('woff'), url('../fonts/lato/lato-regular-webfont.ttf?1414955808') format('truetype'), url('../fonts/lato/lato-regular-webfont.svg?1414955808') format('svg');
 }
