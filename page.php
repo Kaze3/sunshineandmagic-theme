@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 
-<?php if (is_front_page() && function_exists( 'meteor_slideshow' )) { ?>
+<?php $is_front_page = is_front_page() ?>
+
+<?php if ($is_front_page && function_exists( 'meteor_slideshow' )) { ?>
   <div id="front-slideshow">
+     <header class=frontpage-header>
+       <h1 class="frontpage-title"><?php the_title(); ?></h1>
+      </header>
     <?php meteor_slideshow(); ?>
   </div>
 <?php } ?>
@@ -10,6 +15,8 @@
   <div id="content">
     <?php while (have_posts()) : the_post(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+    <?php if(!$is_front_page) { ?>
         <header class="entry-header">
         <?php
           $parents = get_post_ancestors(get_the_ID());
@@ -21,7 +28,7 @@
         <?php } ?> 
           <h1 class="entry-title"><?php the_title(); ?></h1>
         </header>
-
+<?php } ?>
         <div class="entry-content">
       <?php the_content(); ?>
         </div>

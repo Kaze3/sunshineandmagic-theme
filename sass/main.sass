@@ -1,3 +1,5 @@
+@import compass/css3/border-radius
+@import compass/css3/box-shadow
 @import compass/reset
 @import compass/typography/links/unstyled-link
 @import compass/typography/lists/inline-block-list
@@ -46,7 +48,8 @@ $header-menu-hover: #EEEEEE
   font:
     family: $text-font
   margin-bottom: 24px
-  line-height: 1.4em
+  line-height: 1.8em
+  text-align: justify
 
 @mixin header-text
   color: $header-colour-1
@@ -60,6 +63,12 @@ $header-menu-hover: #EEEEEE
 @mixin hover-border
   &:hover
     border-color: $site-background
+
+@mixin shadow
+  @include box-shadow(0px 3px 6px rgba(black, 0.16), 0px 3px 6px rgba(black, 0.23))
+
+@mixin rounded-corners
+  @include border-radius(2px)
 
 .menu-item
   @include menu-link
@@ -80,12 +89,13 @@ h1
 
 h2
   @include header-text
-  font-size: 1.75em
+  font-size: 1.7em
   margin-bottom: 14px
 
 h3
   @include header-text
-  font-size: 1.5em
+  font-size: 1.6em
+  text-align: center
 
 h4
   @include header-text
@@ -107,7 +117,10 @@ article
 
 #header
   background: $header-background
+  margin-bottom: 30px
+  @include shadow
   h1
+    margin-bottom: 0px
     a
       +replace-text-with-dimensions("header_logo.png")
       display: block
@@ -115,37 +128,53 @@ article
       padding-top: 14px
  
 #header-menu
+  text-align: center
   ul
-    +inline-block-list(10px)
+    +inline-block-list(20px)
     li
       padding:
-        top: 8px
-        bottom: 8px
-      &.current-page-ancestor
-        @include menu-item-highlight
-      &.current-menu-item
-        @include menu-item-highlight
+        top: 30px
+        bottom: 30px
       a
         font:
-          size: 1.5em
+          size: 1.8em
         &:hover
           color: $header-menu-hover
 
 #header-submenu
   @extend #header-menu
-  min-height: 6px
   @include menu-item-highlight
   ul
     li
       @include menu-link
-      
-#front-splash
-  img
-    display: block
+      padding:
+        top: 12px
+        bottom: 12px
+      a
+        font-size: 1.5em
+
+#front-slideshow
+  @include shadow
+  @include rounded-corners
+  width: 960px
+  margin: 0 auto
+  margin-bottom: 30px
+  background-color: $header-colour-1
+  text-align: center
+  header.frontpage-header
+    padding: 10px 0
+    h1.frontpage-title
+      color: white
+      margin-bottom: 0
 
 #content-container
+  @include shadow
+  @include rounded-corners
   +clearfix
   background: $content-background
+  width: 960px
+  margin: 0 auto
+  margin-bottom: 30px
         
 #content
   +grid(12)
@@ -158,6 +187,9 @@ article
 .entry-content
   p
     @include main-text
+    margin:
+      left: 20px
+      right: 20px
     a
       +unstyled-link
       color: $link-colour
@@ -169,6 +201,14 @@ article
     li
       @include main-text
       margin-bottom: 12px
+  img
+    margin:
+      left: -20px
+      right: -20px
+  .container_12
+    padding:
+      top: 10px
+      bottom: 20px
 
 .parent-title
   color: $header-colour-2
@@ -177,18 +217,19 @@ article
     size: 1.125em
   
 #footer-container
+  @include shadow
   background: $header-background
   clear: both
   +clearfix
   
 #footer
-  +grid(12)
-  margin:
-    top: 10px
-    bottom: 16px
+  width: 960px
+  margin: 30px auto
   
 #footer-items
+  +grid(12)
   +clearfix
+  margin-bottom: 20px
   
 #footer-menu
   +grid(6)
