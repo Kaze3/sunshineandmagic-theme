@@ -14,7 +14,7 @@
   </div>  <!-- footer -->
 </div>  <!-- footer-containter -->
 
-</div>  <!-- wrap -->
+
 <?php wp_footer(); ?>
 </body>
 </html>

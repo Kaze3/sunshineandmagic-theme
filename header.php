@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
-  <title><? wp_title('|'); ?></title>
+  <title><?php wp_title('|'); ?></title>
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
   <?php wp_head(); ?>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 </head>
   
 <body <?php body_class(); ?>>
-<div id="wrap">
+
 <div id="header">
   <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
   <div id="header-menu">
