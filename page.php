@@ -11,6 +11,21 @@
   </div>
 <?php } ?>
 
+<?php if ($is_front_page) { ?>
+  <?php
+    $my_query = new WP_Query( 'category_name=Update&posts_per_page=1' );
+    if ($my_query->have_posts()) {
+  ?>
+      <div id="update">
+      <?php $my_query->the_post(); ?>
+      <h2><?php the_title(); ?></h2>
+      <div class="update-content">
+        <?php the_content(); ?>
+      </div>
+    </div>
+  <?php } ?>
+<?php } ?>
+
 <div id="content-container">
   <div id="content">
     <?php while (have_posts()) : the_post(); ?>

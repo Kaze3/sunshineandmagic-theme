@@ -10,6 +10,7 @@
 
 $ninesixty-columns: 12
 $ninesixty-gutter-width: 60px
+$ninesixty-grid-width: 960px
 
 $site-background: #EEEEEE
 $header-background: #0059B2
@@ -68,7 +69,7 @@ $header-menu-hover: #EEEEEE
   @include box-shadow(0px 3px 6px rgba(black, 0.16), 0px 3px 6px rgba(black, 0.23))
 
 @mixin rounded-corners
-  @include border-radius(2px)
+  @include border-radius(4px)
 
 .menu-item
   @include menu-link
@@ -111,10 +112,6 @@ strong
 article
   +clearfix
 
-#wrap
-  +grid-container
-  +clearfix
-
 #header
   background: $header-background
   margin-bottom: 30px
@@ -153,38 +150,56 @@ article
       a
         font-size: 1.5em
 
+@mixin card
+  +grid-container
+  +clearfix
+  margin-bottom: 30px
+  padding-top: 10px
+    
 #front-slideshow
   @include shadow
   @include rounded-corners
-  width: 960px
-  margin: 0 auto
-  margin-bottom: 30px
+  @include card
   background-color: $header-colour-1
   text-align: center
+  overflow: hidden
   header.frontpage-header
-    padding: 10px 0
+    padding-bottom: 10px
     h1.frontpage-title
       color: white
       margin-bottom: 0
 
-#content-container
+#update
+  @include card
   @include shadow
   @include rounded-corners
-  +clearfix
   background: $content-background
-  width: 960px
-  margin: 0 auto
-  margin-bottom: 30px
+  h2
+    +grid(12)
+
+#content-container
+  @include card
+  @include shadow
+  @include rounded-corners
+  background: $content-background
         
 #content
-  +grid(12)
-  +clearfix
-  background: $content-background
-  margin:
-    top: 16px
+  +grid-system(12)
+  padding:
     bottom: 16px
 
-.entry-content
+.entry-header
+  +grid(12)
+
+@mixin col($cols)
+  +grid(12/$cols)
+  &:first-child
+    +alpha
+  &:last-child
+    +omega
+
+.entry-content, .update-content
+  +grid(12)
   p
     @include main-text
     margin:
@@ -205,11 +220,18 @@ article
     margin:
       left: -20px
       right: -20px
-  .container_12
+  .row
+    +grid(12)
+    +alpha
+    +omega
     padding:
       top: 10px
       bottom: 20px
-
+    .col2
+      @include col(2)
+    .col3
+      @include col(3)
+  
 .parent-title
   color: $header-colour-2
   font:
