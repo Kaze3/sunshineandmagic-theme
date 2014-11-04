@@ -101,4 +101,9 @@ function my_mce_before_init_insert_formats( $init_array ) {
 } 
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+
+function filter_ptags_on_images($content) {
+    return preg_replace('/<p[^>]*>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\/p>/', '<div class="content-image">$1</div>', $content);
+}
+add_filter('the_content', 'filter_ptags_on_images', 99);
 ?>

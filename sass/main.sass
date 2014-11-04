@@ -32,6 +32,24 @@ $title-font: "Bebas Neue Regular", Arial, sans-serif
 
 $header-menu-hover: #EEEEEE
 
+$break-small: 320px
+$break-medium: 650px
+$break-wide: 960px
+
+=respond-to($media)
+  @if $media == mobile
+    @media only screen and (max-width: $break-small)
+      @content
+  @else if $media == medium-screen
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-medium - 1)
+      @content
+  @else if $media == large-screen
+    @media only screen and (min-width: $break-medium) and (max-width: $break-wide - 1)
+      @content
+  @else if $media == wide-screen
+    @media only screen and (min-width: $break-wide)
+      @content
+
 @mixin menu-item-highlight
   background: #BBBBBB
   
@@ -56,28 +74,21 @@ $header-menu-hover: #EEEEEE
   color: $header-colour-1
   font:
     family: $title-font
-    size: 2.25em
+    size: 2.4em
   line-height: 1.125em
   margin-bottom: 20px
   font-weight: normal
 
-@mixin hover-border
-  &:hover
-    border-color: $site-background
+=shadow
+  +box-shadow(0px 3px 6px rgba(black, 0.16), 0px 3px 6px rgba(black, 0.23))
 
-@mixin shadow
-  @include box-shadow(0px 3px 6px rgba(black, 0.16), 0px 3px 6px rgba(black, 0.23))
-
-@mixin rounded-corners
-  @include border-radius(4px)
+=rounded-corners
+  +border-radius(4px)
 
 .menu-item
   @include menu-link
 
 +grid-system-complete(12)
-
-.container_12
-  +clearfix
 
 body
   background: $site-background
@@ -90,17 +101,17 @@ h1
 
 h2
   @include header-text
-  font-size: 1.7em
+  font-size: 2.0em
   margin-bottom: 14px
 
 h3
   @include header-text
-  font-size: 1.6em
+  font-size: 1.8em
   text-align: center
 
 h4
   @include header-text
-  font-size: 1.25em
+  font-size: 1.4em
   color: $main-text-colour
 
 em
@@ -109,19 +120,22 @@ em
 strong
   font-weight: bold
   
-article
-  +clearfix
-
 #header
+  +shadow
   background: $header-background
   margin-bottom: 30px
-  @include shadow
   h1
+    max-width: 519px
+    margin: 0 auto
     margin-bottom: 0px
+    padding:
+      left: 10px
+      right: 10px
     a
-      +replace-text-with-dimensions("header_logo.png")
+      +replace-text("header_logo.png")
+      height: 151px
+      background-size: contain
       display: block
-      margin: 0 auto
       padding-top: 14px
  
 #header-menu
@@ -150,46 +164,62 @@ article
       a
         font-size: 1.5em
 
-@mixin card
-  +grid-container
+=card
+  +respond-to(wide-screen)
+    +grid-container
+    +rounded-corners
+  +respond-to(large-screen)
+    +rounded-corners
+    margin:
+      left: auto
+      right: auto
+    width: $break-medium
+  +shadow
   +clearfix
+  background: $content-background
   margin-bottom: 30px
-  padding-top: 10px
+  padding-top: 20px
     
 #front-slideshow
-  @include shadow
-  @include rounded-corners
-  @include card
-  background-color: $header-colour-1
+  +card
   text-align: center
   overflow: hidden
-  header.frontpage-header
-    padding-bottom: 10px
-    h1.frontpage-title
+  .frontpage-header
+    background-color: $header-colour-1
+    margin-top: -20px
+    padding:
+      top: 10px
+      bottom: 10px
+    .frontpage-title
       color: white
       margin-bottom: 0
 
 #update
-  @include card
-  @include shadow
-  @include rounded-corners
-  background: $content-background
+  +card
   h2
     +grid(12)
 
+img[class*="align"], img[class*="wp-image-"]
+  height: auto
+
 #content-container
-  @include card
-  @include shadow
-  @include rounded-corners
   background: $content-background
+  +card
         
 #content
-  +grid-system(12)
+  +clearfix
   padding:
-    bottom: 16px
-
+    bottom: 20px
+    left: 30px
+    right: 30px
+  +respond-to(wide-screen)
+    padding:
+      left: 0px
+      right: 0px
+      
 .entry-header
-  +grid(12)
+  +respond-to(wide-screen)
+    +grid(12)
 
 @mixin col($cols)
   +grid(12/$cols)
@@ -199,12 +229,14 @@ article
     +omega
 
 .entry-content, .update-content
-  +grid(12)
+  +respond-to(wide-screen)
+    +grid(12)
   p
     @include main-text
-    margin:
-      left: 20px
-      right: 20px
+    +respond-to(wide-screen)
+      margin:
+        left: 20px
+        right: 20px
     a
       +unstyled-link
       color: $link-colour
@@ -216,30 +248,34 @@ article
     li
       @include main-text
       margin-bottom: 12px
-  img
-    margin:
-      left: -20px
-      right: -20px
+  .content-image
+    text-align: center
+    margin-bottom: 20px
+    img
+      max-width: 100%
   .row
-    +grid(12)
-    +alpha
-    +omega
-    padding:
-      top: 10px
-      bottom: 20px
+    +respond-to(wide-screen)
+      +grid(12)
+      +alpha
+      +omega
+      padding:
+        top: 10px
+        bottom: 20px
     .col2
-      @include col(2)
+      +respond-to(wide-screen)
+        @include col(2)
     .col3
-      @include col(3)
+      +respond-to(wide-screen)
+        @include col(3)
   
 .parent-title
   color: $header-colour-2
   font:
     family: $title-font
-    size: 1.125em
+    size: 1.2em
   
 #footer-container
-  @include shadow
+  +shadow
   background: $header-background
   clear: both
   +clearfix
@@ -310,10 +346,6 @@ table.easy-table
 
 small
   font-size: 0.8em
-
-#gallery-1 
-  img
-    +hover-border
 
 .form-label
   width: 10em
