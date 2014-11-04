@@ -16,12 +16,14 @@
     $my_query = new WP_Query( 'category_name=Update&posts_per_page=1' );
     if ($my_query->have_posts()) {
   ?>
-      <div id="update">
+     <div id="update-container">
+     <div id="update">
       <?php $my_query->the_post(); ?>
       <h2><?php the_title(); ?></h2>
       <div class="update-content">
         <?php the_content(); ?>
       </div>
+    </div>
     </div>
   <?php } ?>
 <?php } ?>

@@ -32,12 +32,12 @@ $title-font: "Bebas Neue Regular", Arial, sans-serif
 
 $header-menu-hover: #EEEEEE
 
-$break-small: 320px
+$break-small: 420px
 $break-medium: 650px
 $break-wide: 960px
 
 =respond-to($media)
-  @if $media == mobile
+  @if $media == small-screen
     @media only screen and (max-width: $break-small)
       @content
   @else if $media == medium-screen
@@ -137,6 +137,8 @@ strong
       background-size: contain
       display: block
       padding-top: 14px
+      +respond-to(small-screen)
+        height: 100px
  
 #header-menu
   text-align: center
@@ -144,8 +146,16 @@ strong
     +inline-block-list(20px)
     li
       padding:
-        top: 30px
-        bottom: 30px
+        top: 15px
+        bottom: 15px
+      +respond-to(large-screen)
+        padding:
+          top: 30px
+          bottom: 30px
+      +respond-to(wide-screen)
+        padding:
+          top: 30px
+          bottom: 30px      
       a
         font:
           size: 1.8em
@@ -193,15 +203,7 @@ strong
     .frontpage-title
       color: white
       margin-bottom: 0
-
-#update
-  +card
-  h2
-    +grid(12)
-
-img[class*="align"], img[class*="wp-image-"]
-  height: auto
-
+      
 #content-container
   background: $content-background
   +card
@@ -216,7 +218,16 @@ img[class*="align"], img[class*="wp-image-"]
     padding:
       left: 0px
       right: 0px
-      
+
+#update-container
+  @extend #content-container
+  h2
+    +respond-to(wide-screen)
+      +grid(12)
+
+#update
+  @extend #content      
+
 .entry-header
   +respond-to(wide-screen)
     +grid(12)
@@ -251,6 +262,8 @@ img[class*="align"], img[class*="wp-image-"]
   .content-image
     text-align: center
     margin-bottom: 20px
+    img[class*="align"], img[class*="wp-image-"]
+      height: auto
     img
       max-width: 100%
   .row
