@@ -22,7 +22,7 @@ Template Name: Gallery List
       <h1 class="entry-title">Gallery</h1>
     </header>
     <div class="entry-content">
-    <div class="container_12">
+    <div class="row">
 
 <?php
   $args = array('post_type' => 'page', 'post_parent' => $post->ID, 'order' => 'ASC');
@@ -42,12 +42,7 @@ Template Name: Gallery List
     $image_attributes = wp_get_attachment_image_src($ids[0], 'medium');
     $gallery_id = $gallery_page->ID;
     $description = get_post_custom_values('gallery-description', $gallery_id);
-
-    if ($count % 2 == 0) {
-      $tags = 'grid_6 omega';
-    } else {
-      $tags = 'grid_6 alpha';
-    }
+    $tags = 'col2';
 
 ?>
   <div class="gallery-summary <?php echo $tags ?>">

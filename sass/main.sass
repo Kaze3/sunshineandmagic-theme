@@ -197,9 +197,7 @@ strong
   .frontpage-header
     background-color: $header-colour-1
     margin-top: -20px
-    padding:
-      top: 10px
-      bottom: 10px
+    padding: 10px 30px
     .frontpage-title
       color: white
       margin-bottom: 0
@@ -259,13 +257,6 @@ strong
     li
       @include main-text
       margin-bottom: 12px
-  .content-image
-    text-align: center
-    margin-bottom: 20px
-    img[class*="align"], img[class*="wp-image-"]
-      height: auto
-    img
-      max-width: 100%
   .row
     +respond-to(wide-screen)
       +grid(12)
@@ -280,7 +271,16 @@ strong
     .col3
       +respond-to(wide-screen)
         @include col(3)
-  
+
+.content-image, .gallery-summary
+  text-align: center
+  margin-bottom: 20px
+  img[class*="align"], img[class*="wp-image-"]
+    height: auto
+  img
+    max-width: 100%
+
+
 .parent-title
   color: $header-colour-2
   font:
@@ -290,46 +290,23 @@ strong
 #footer-container
   +shadow
   background: $header-background
-  clear: both
-  +clearfix
-  
-#footer
-  width: 960px
-  margin: 30px auto
-  
-#footer-items
-  +grid(12)
-  +clearfix
-  margin-bottom: 20px
   
 #footer-menu
-  +grid(6)
-  +alpha
-  margin-right: 10px
-  width: 440px
-  
+  @extend #header-menu
+
 #footer-widget
-  +grid(6)
-  +omega
-  margin-left: 10px
-  width: 440px
+  text-align: center
   
 #colophon
-  margin:
-    top: 10px
-    bottom: 10px
+  padding:
+    top: 30px
+    bottom: 30px
   text-align: center
-  clear: both
   color: $nav-text-colour
-  
-#menu-footer-menu
-  padding-right: 4px
-  text-align: right
-  border-right: 2px solid white
   
 .widget_cnss_widget
   list-style: none
-  margin-top: 5px
+  margin: 0 auto
   
 #questions
   margin-bottom: 20px
