@@ -37,12 +37,12 @@
         <header class="entry-header">
         <?php
           $parents = get_post_ancestors(get_the_ID());
-          if ($parents) {    
+          if ($parents) {
             $pid = $parents[count($parents)-1];
             $parent = get_page($pid);
         ?>
           <p class="parent-title"><?php echo get_the_title($parent); ?></p>
-        <?php } ?> 
+        <?php } ?>
           <h1 class="entry-title"><?php the_title(); ?></h1>
         </header>
 <?php } ?>
