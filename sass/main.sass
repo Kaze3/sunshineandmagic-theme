@@ -52,7 +52,7 @@ $break-wide: 960px
 
 @mixin menu-item-highlight
   background: #BBBBBB
-  
+
 @mixin menu-link
   a
     +unstyled-link
@@ -95,7 +95,7 @@ body
   font:
     size: 100%
     family: $text-font
-  
+
 h1
   @include header-text
 
@@ -119,11 +119,19 @@ em
 
 strong
   font-weight: bold
-  
-#header
+
+#header-container
   +shadow
   background: $header-background
   margin-bottom: 30px
+
+#header
+  +respond-to(large-screen)
+    width: $break-medium
+    margin: 0 auto
+  +respond-to(wide-screen)
+    width: $break-wide
+    margin: 0 auto
   h1
     max-width: 519px
     margin: 0 auto
@@ -139,33 +147,56 @@ strong
       padding-top: 14px
       +respond-to(small-screen)
         height: 100px
- 
-#header-menu
+
+=menu
   text-align: center
   ul
     +inline-block-list(20px)
+    padding:
+      top: 20px
+      bottom: 20px
+    +respond-to(large-screen)
+      padding:
+        top: 30px
+        bottom: 10px
+    +respond-to(wide-screen)
+      padding:
+        top: 30px
+        bottom: 40px
     li
       padding:
-        top: 15px
-        bottom: 15px
+        top: 10px
+        bottom: 20px
       +respond-to(large-screen)
         padding:
-          top: 30px
+          top: 0px
           bottom: 30px
       +respond-to(wide-screen)
         padding:
-          top: 30px
-          bottom: 30px      
+          top: 0px
+          bottom: 0px
       a
         font:
           size: 1.8em
         &:hover
           color: $header-menu-hover
 
+#header-menu
+  +menu
+  ul li
+    &:last-child
+      a
+        background-color: $header-colour-1
+        padding: 12px
+        margin-left: 12px
+        +rounded-corners
+        +shadow
+
 #header-submenu
-  @extend #header-menu
+  +menu
   @include menu-item-highlight
   ul
+    padding: 0px
     li
       @include menu-link
       padding:
@@ -173,6 +204,27 @@ strong
         bottom: 12px
       a
         font-size: 1.5em
+
+.call-to-action
+  height: 120px
+  width: 120px
+  margin-top: -200px
+  position: absolute
+  margin-left: 770px
+  a
+    +unstyled-link
+    position: absolute
+    border-radius: 50%
+    color: white
+    text-align: center
+    font-family: "Bebas Neue Regular", Arial, sans-serif
+    background: #B20000
+    height: 120px
+    width: 120px
+    transform: rotate(20deg)
+    p
+      font-size: 1.8em
+      margin-top: 30px
 
 =card
   +respond-to(wide-screen)
@@ -189,7 +241,7 @@ strong
   background: $content-background
   margin-bottom: 30px
   padding-top: 20px
-    
+
 #front-slideshow
   +card
   text-align: center
@@ -201,11 +253,11 @@ strong
     .frontpage-title
       color: white
       margin-bottom: 0
-      
+
 #content-container
   background: $content-background
   +card
-        
+
 #content
   +clearfix
   padding:
@@ -224,7 +276,7 @@ strong
       +grid(12)
 
 #update
-  @extend #content      
+  @extend #content
 
 .entry-header
   +respond-to(wide-screen)
@@ -286,28 +338,28 @@ strong
   font:
     family: $title-font
     size: 1.2em
-  
+
 #footer-container
   +shadow
   background: $header-background
-  
+
 #footer-menu
-  @extend #header-menu
+  +menu
 
 #footer-widget
   text-align: center
-  
+
 #colophon
   padding:
     top: 30px
     bottom: 30px
   text-align: center
   color: $nav-text-colour
-  
+
 .widget_cnss_widget
   list-style: none
   margin: 0 auto
-  
+
 #questions
   margin-bottom: 20px
   ul
@@ -325,7 +377,7 @@ strong
   img
     margin-bottom: 16px
 
-table.easy-table 
+table.easy-table
   th
     font-family: $title-font
     color: $header-colour-1
@@ -351,11 +403,11 @@ span.wpcf7-list-item-label
   table
     border-top-color: $main-text-colour !important
     thead
-      tr    
+      tr
         th
           color: $main-text-colour
     tbody
-      tr   
+      tr
         td
           color: $main-text-colour
 

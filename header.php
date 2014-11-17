@@ -12,12 +12,14 @@
 
 <body <?php body_class(); ?>>
 
+<div id="header-container">
 <div id="header">
   <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
   <div id="header-menu">
     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
   </div>
-
+  <!-- <div class="call-to-action"><a href="/rates/enquiries"><p>Enquire<br>Now</p></a></div> -->
+</div> <!-- header -->
   <?php
     global $post;
           $parents = get_post_ancestors( $post->ID );
@@ -31,4 +33,4 @@
     </ul>
   </div>
   <?php } ?>
-</div> <!-- header -->
+</div>
