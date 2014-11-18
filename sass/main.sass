@@ -411,6 +411,8 @@ small
 
 div.wpcf7
   margin: 0 30px
+  +respond-to(small-screen)
+    margin: 0
 
 .wpcf7-form-control
   font-family: $text-font
@@ -419,17 +421,28 @@ div.wpcf7
   padding: 6px
   border-radius: 4px
   color: $main-text-colour
+  +respond-to(small-screen)
+    max-width: 100%
 
-.wpcf7-submit
-  background: $header-background
+=basic-link
+  +unstyled-link
+  cursor: pointer
   color: $nav-text-colour
+
+=button
+  +basic-link
+  background: $header-background
   padding: 12px
   +shadow
+  +rounded-corners
   &:hover
     background: lighten($header-background, 6)
 
+.wpcf7-submit
+  +button
+
 .form-label
-  width: 10em
+  width: 100%
   float: left
 
 .wpcf7-list-item-label
@@ -456,3 +469,59 @@ div.wpcf7
 
 img#wpstats
   display: none
+
+.arrival-date
+  input
+    width: 210px
+
+.ui-datepicker
+  display: none
+  padding: 10px
+  background: $site-background
+  +rounded-corners
+  +shadow
+  margin-top: 5px
+  width: 200px
+  text-align: center
+
+
+.ui-datepicker-header
+  a
+    +basic-link
+    display: block
+
+.ui-datepicker-prev
+  +button
+  float: left
+
+.ui-datepicker-next
+  +button
+  float: right
+
+.ui-datepicker-title
+  clear: both
+  padding:
+    top: 12px
+    bottom: 12px
+  font:
+    family: $title-font
+    size: 1.3em
+  color: $header-colour-1
+
+.ui-datepicker-calendar
+  width: 200px
+  thead
+    font-family: $title-font
+    color: $header-colour-1
+    span
+      display: block
+      text-align: center
+  td
+    padding: 3px
+    text-align: center
+    a
+      +unstyled-link
+      color: $main-text-colour
+
+.ui-datepicker-unselectable
+  color: $header-colour-2
