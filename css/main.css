@@ -1180,17 +1180,22 @@ div.wpcf7 {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
 
-/* line 477, ../sass/main.sass */
+/* line 479, ../sass/main.sass */
+.sbc-legend tr:last-child {
+  display: none;
+}
+
+/* line 482, ../sass/main.sass */
 img#wpstats {
   display: none;
 }
 
-/* line 481, ../sass/main.sass */
+/* line 486, ../sass/main.sass */
 .arrival-date input {
   width: 210px;
 }
 
-/* line 484, ../sass/main.sass */
+/* line 489, ../sass/main.sass */
 .ui-datepicker {
   display: none;
   padding: 10px;
@@ -1206,7 +1211,7 @@ img#wpstats {
   text-align: center;
 }
 
-/* line 496, ../sass/main.sass */
+/* line 501, ../sass/main.sass */
 .ui-datepicker-header a {
   color: inherit;
   text-decoration: inherit;
@@ -1220,7 +1225,7 @@ img#wpstats {
   outline: none;
 }
 
-/* line 500, ../sass/main.sass */
+/* line 505, ../sass/main.sass */
 .ui-datepicker-prev {
   color: inherit;
   text-decoration: inherit;
@@ -1246,7 +1251,7 @@ img#wpstats {
   background: #0068d1;
 }
 
-/* line 504, ../sass/main.sass */
+/* line 509, ../sass/main.sass */
 .ui-datepicker-next {
   color: inherit;
   text-decoration: inherit;
@@ -1272,7 +1277,7 @@ img#wpstats {
   background: #0068d1;
 }
 
-/* line 508, ../sass/main.sass */
+/* line 513, ../sass/main.sass */
 .ui-datepicker-title {
   clear: both;
   padding-top: 12px;
@@ -1282,26 +1287,26 @@ img#wpstats {
   color: #B20000;
 }
 
-/* line 518, ../sass/main.sass */
+/* line 523, ../sass/main.sass */
 .ui-datepicker-calendar {
   width: 200px;
 }
-/* line 520, ../sass/main.sass */
+/* line 525, ../sass/main.sass */
 .ui-datepicker-calendar thead {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   color: #B20000;
 }
-/* line 523, ../sass/main.sass */
+/* line 528, ../sass/main.sass */
 .ui-datepicker-calendar thead span {
   display: block;
   text-align: center;
 }
-/* line 526, ../sass/main.sass */
+/* line 531, ../sass/main.sass */
 .ui-datepicker-calendar td {
   padding: 3px;
   text-align: center;
 }
-/* line 529, ../sass/main.sass */
+/* line 534, ../sass/main.sass */
 .ui-datepicker-calendar td a {
   color: inherit;
   text-decoration: inherit;
@@ -1313,7 +1318,7 @@ img#wpstats {
   outline: none;
 }
 
-/* line 533, ../sass/main.sass */
+/* line 538, ../sass/main.sass */
 .ui-datepicker-unselectable {
   color: #CCCCCC;
 }
