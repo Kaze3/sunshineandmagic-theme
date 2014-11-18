@@ -409,11 +409,30 @@ table.easy-table
 small
   font-size: 0.8em
 
+div.wpcf7
+  margin: 0 30px
+
+.wpcf7-form-control
+  font-family: $text-font
+  background: $site-background
+  border: 0
+  padding: 6px
+  border-radius: 4px
+  color: $main-text-colour
+
+.wpcf7-submit
+  background: $header-background
+  color: $nav-text-colour
+  padding: 12px
+  +shadow
+  &:hover
+    background: lighten($header-background, 6)
+
 .form-label
   width: 10em
   float: left
 
-span.wpcf7-list-item-label
+.wpcf7-list-item-label
   margin-right: 5px
 
 .sbc-calendar-wrapper
