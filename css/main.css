@@ -1013,10 +1013,11 @@ article, #update {
 
 /* line 368, ../sass/main.sass */
 #footer-widget {
-  text-align: center;
+  width: 108px;
+  margin: 0 auto;
 }
 
-/* line 371, ../sass/main.sass */
+/* line 372, ../sass/main.sass */
 #colophon {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1024,27 +1025,27 @@ article, #update {
   color: #FFFFFF;
 }
 
-/* line 378, ../sass/main.sass */
+/* line 379, ../sass/main.sass */
 .widget_cnss_widget {
   list-style: none;
   margin: 0 auto;
 }
 
-/* line 382, ../sass/main.sass */
+/* line 383, ../sass/main.sass */
 #questions {
   margin-bottom: 20px;
 }
-/* line 384, ../sass/main.sass */
+/* line 385, ../sass/main.sass */
 #questions ul {
   color: #AAAAAA;
   margin-bottom: 16px;
   list-style: circle outside;
 }
-/* line 388, ../sass/main.sass */
+/* line 389, ../sass/main.sass */
 #questions ul li {
   margin-bottom: 4px;
 }
-/* line 390, ../sass/main.sass */
+/* line 391, ../sass/main.sass */
 #questions ul li a {
   color: inherit;
   text-decoration: inherit;
@@ -1054,69 +1055,69 @@ article, #update {
 #questions ul li a:active, #questions ul li a:focus {
   outline: none;
 }
-/* line 392, ../sass/main.sass */
+/* line 393, ../sass/main.sass */
 #questions ul li a:hover {
   color: #CCCCCC;
 }
 
-/* line 396, ../sass/main.sass */
+/* line 397, ../sass/main.sass */
 .gallery-summary img {
   margin-bottom: 16px;
 }
 
-/* line 400, ../sass/main.sass */
+/* line 401, ../sass/main.sass */
 table.easy-table th {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   color: #B20000;
   font-weight: normal;
   font-size: 1.5em;
 }
-/* line 405, ../sass/main.sass */
+/* line 406, ../sass/main.sass */
 table.easy-table td {
   color: #868686;
 }
 
-/* line 408, ../sass/main.sass */
+/* line 409, ../sass/main.sass */
 small {
   font-size: 0.8em;
 }
 
-/* line 411, ../sass/main.sass */
+/* line 412, ../sass/main.sass */
 .form-label {
   width: 10em;
   float: left;
 }
 
-/* line 415, ../sass/main.sass */
+/* line 416, ../sass/main.sass */
 span.wpcf7-list-item-label {
   margin-right: 5px;
 }
 
-/* line 418, ../sass/main.sass */
+/* line 419, ../sass/main.sass */
 .sbc-calendar-wrapper {
   color: #868686;
 }
 
-/* line 422, ../sass/main.sass */
+/* line 423, ../sass/main.sass */
 .sbc-calendar table {
   border-top-color: #868686 !important;
 }
-/* line 426, ../sass/main.sass */
+/* line 427, ../sass/main.sass */
 .sbc-calendar table thead tr th {
   color: #868686;
 }
-/* line 430, ../sass/main.sass */
+/* line 431, ../sass/main.sass */
 .sbc-calendar table tbody tr td {
   color: #868686;
 }
 
-/* line 433, ../sass/main.sass */
+/* line 434, ../sass/main.sass */
 .sbc-navigation {
   font-size: 1.4em;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
 }
 
-/* line 437, ../sass/main.sass */
+/* line 438, ../sass/main.sass */
 img#wpstats {
   display: none;
 }
