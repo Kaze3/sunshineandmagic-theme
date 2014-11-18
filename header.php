@@ -14,7 +14,7 @@
 
 <div id="header-container">
 <div id="header">
-  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a><span class="tagline">Townhome Vacation Rentals in Florida</span></h1>
   <div id="header-menu">
     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
   </div>

@@ -29,6 +29,7 @@ $link-hover-colour: lighten($link-colour, 6)
 
 $text-font: "Lato Regular", Arial, sans-serif
 $title-font: "Bebas Neue Regular", Arial, sans-serif
+$script-font: "Indie Flower", cursive
 
 $header-menu-hover: #EEEEEE
 
@@ -126,6 +127,7 @@ strong
   margin-bottom: 30px
 
 #header
+  text-align: center
   +respond-to(large-screen)
     width: $break-medium
     margin: 0 auto
@@ -133,6 +135,9 @@ strong
     width: $break-wide
     margin: 0 auto
   h1
+    font-size: 1em
+    line-height: 1em
+    position: relative
     max-width: 519px
     margin: 0 auto
     margin-bottom: 0px
@@ -147,6 +152,21 @@ strong
       padding-top: 14px
       +respond-to(small-screen)
         height: 100px
+
+=normal-tagline
+  position: absolute
+  bottom: 0px
+  right: 10px
+
+.tagline
+  font:
+    size: 0.9em
+    family: $script-font
+  color: $nav-text-colour
+  +respond-to(large-screen)
+    +normal-tagline
+  +respond-to(wide-screen)
+    +normal-tagline
 
 =menu
   text-align: center

@@ -8,3 +8,8 @@
   src: url('../fonts/lato/lato-regular-webfont.eot?1414955808');
   src: url('../fonts/lato/lato-regular-webfont.eot?&1414955808#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular-webfont.woff?1414955808') format('woff'), url('../fonts/lato/lato-regular-webfont.ttf?1414955808') format('truetype'), url('../fonts/lato/lato-regular-webfont.svg?1414955808') format('svg');
 }
+@font-face {
+  font-family: "Indie Flower";
+  src: url('../fonts/indieflower/indieflower-webfont.eot?1416309046');
+  src: url('../fonts/indieflower/indieflower-webfont.eot?&1416309046#iefix') format('embedded-opentype'), url('../fonts/indieflower/indieflower-webfont.woff?1416309046') format('woff'), url('../fonts/indieflower/indieflower-webfont.ttf?1416309046') format('truetype'), url('../fonts/indieflower/indieflower-webfont.svg?1416309046') format('svg');
+}
