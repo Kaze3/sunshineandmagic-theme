@@ -411,6 +411,13 @@ small
 
 div.wpcf7
   margin: 0 30px
+  +respond-to(wide-screen)
+    margin: 0
+    .row
+      padding:
+        top: 0
+        bottom: 0
+
   +respond-to(small-screen)
     margin: 0
 
