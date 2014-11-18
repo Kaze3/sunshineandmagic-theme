@@ -28,8 +28,8 @@
   <?php } ?>
 <?php } ?>
 
-<div id="content-container">
-  <div id="content">
+<div class="content-container">
+
     <?php while (have_posts()) : the_post(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -47,11 +47,20 @@
         </header>
 <?php } ?>
         <div class="entry-content">
-      <?php the_content(); ?>
+          <?php if ( function_exists( 'the_content_part' ) && has_content_parts() ) {
+                  the_content_part( 1, '', '' );
+                  the_content_parts( array(
+                    'before' => '</div></article></div><div class="content-container"><article><div class="entry-content">',
+                    'after' => '',
+                    'start' => 2
+                  ) );
+                } else {
+                  the_content();
+                } ?>
         </div>
       </article>
     <?php endwhile; ?>
-  </div>
+
 </div>
 
 <?php get_footer(); ?>

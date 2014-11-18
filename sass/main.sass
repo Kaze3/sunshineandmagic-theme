@@ -273,11 +273,11 @@ strong
       color: white
       margin-bottom: 0
 
-#content-container
+.content-container
   background: $content-background
   +card
 
-#content
+article
   +clearfix
   padding:
     bottom: 20px
@@ -289,13 +289,13 @@ strong
       right: 0px
 
 #update-container
-  @extend #content-container
+  @extend .content-container
   h2
     +respond-to(wide-screen)
       +grid(12)
 
 #update
-  @extend #content
+  @extend article
 
 .entry-header
   +respond-to(wide-screen)

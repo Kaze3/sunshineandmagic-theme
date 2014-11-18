@@ -8,7 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+article,
+#update, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -59,7 +60,7 @@ a img {
 }
 
 /* line 116, ../../../../../../../home/htpc/.gem/ruby/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, #update, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -734,7 +735,7 @@ strong {
 }
 
 /* line 276, ../sass/main.sass */
-#content-container, #update-container {
+.content-container, #update-container {
   background: #FFFFFF;
   -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
@@ -747,7 +748,7 @@ strong {
 }
 @media only screen and (min-width: 960px) {
   /* line 276, ../sass/main.sass */
-  #content-container, #update-container {
+  .content-container, #update-container {
     margin-left: auto;
     margin-right: auto;
     width: 960px;
@@ -758,7 +759,7 @@ strong {
 }
 @media only screen and (min-width: 650px) and (max-width: 959px) {
   /* line 276, ../sass/main.sass */
-  #content-container, #update-container {
+  .content-container, #update-container {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -769,7 +770,7 @@ strong {
 }
 
 /* line 280, ../sass/main.sass */
-#content, #update {
+article, #update {
   overflow: hidden;
   *zoom: 1;
   padding-bottom: 20px;
@@ -778,7 +779,7 @@ strong {
 }
 @media only screen and (min-width: 960px) {
   /* line 280, ../sass/main.sass */
-  #content, #update {
+  article, #update {
     padding-left: 0px;
     padding-right: 0px;
   }

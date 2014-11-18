@@ -4,20 +4,20 @@ Template Name: Gallery List
 */
 ?>
 
-<?php 
+<?php
   function gallery_first_image($my_post){
     if (preg_match('/\[gallery.*ids=.(.*).\]/', $my_post->post_content, $ids)) {
       $array_id = explode(",", $ids[1]);
     }
 
     return $array_id;
-  }  
+  }
 ?>
 
 <?php get_header(); ?>
 
-<div id="content-container">
-  <div id="content">
+<div class="content-container">
+  <article>
     <header class="entry-header">
       <h1 class="entry-title">Gallery</h1>
     </header>
@@ -59,7 +59,7 @@ Template Name: Gallery List
 
     </div> <!-- container_12 -->
     </div> <!-- entry-content -->
-  </div> <!-- content -->
+  </article> <!-- content -->
 </div> <!-- content-container -->
 
 <?php get_footer(); ?>
