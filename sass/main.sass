@@ -33,8 +33,6 @@ $script-font: "Indie Flower", cursive
 
 $header-menu-hover: #EEEEEE
 
-$image-border: #BEBEBE
-
 $break-small: 420px
 $break-medium: 650px
 $break-wide: 960px
@@ -352,7 +350,7 @@ article
     height: auto
   img
     max-width: 100%
-    border: 1px solid $image-border
+    +rounded-corners
 
 
 .parent-title
@@ -402,7 +400,8 @@ article
 
 .google-map-placeholder
   width: 100% !important
-  border: 1px solid $image-border !important
+  border: none !important
+  +rounded-corners
   +respond-to(small-screen)
     height: 260px !important
   +respond-to(medium-screen)
