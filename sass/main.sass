@@ -33,6 +33,8 @@ $script-font: "Indie Flower", cursive
 
 $header-menu-hover: #EEEEEE
 
+$image-border: #BEBEBE
+
 $break-small: 420px
 $break-medium: 650px
 $break-wide: 960px
@@ -350,6 +352,7 @@ article
     height: auto
   img
     max-width: 100%
+    border: 1px solid $image-border
 
 
 .parent-title
@@ -396,6 +399,19 @@ article
 .gallery-summary
   img
     margin-bottom: 16px
+
+.google-map-placeholder
+  width: 100% !important
+  border: 1px solid $image-border !important
+  +respond-to(small-screen)
+    height: 260px !important
+  +respond-to(medium-screen)
+    height: 260px !important
+  +respond-to(large-screen)
+    width: 588px !important
+    height: 328px !important
+  +respond-to(wide-screen)
+    width: 898px !important
 
 table.easy-table
   th
