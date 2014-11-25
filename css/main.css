@@ -1206,43 +1206,60 @@ div.wpcf7 {
 /* line 479, ../sass/main.sass */
 .sbc-calendar-wrapper {
   color: #868686;
+  width: 202px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 650px) and (max-width: 959px) {
+  /* line 479, ../sass/main.sass */
+  .sbc-calendar-wrapper {
+    width: 404px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 479, ../sass/main.sass */
+  .sbc-calendar-wrapper {
+    width: 606px;
+  }
 }
 
-/* line 483, ../sass/main.sass */
+/* line 489, ../sass/main.sass */
 .sbc-calendar table {
   border-top-color: #868686 !important;
 }
-/* line 487, ../sass/main.sass */
+/* line 493, ../sass/main.sass */
 .sbc-calendar table thead tr th {
+  font-family: "Lato Regular", Arial, sans-serif;
   color: #868686;
 }
-/* line 491, ../sass/main.sass */
+/* line 498, ../sass/main.sass */
 .sbc-calendar table tbody tr td {
+  font-family: "Lato Regular", Arial, sans-serif;
   color: #868686;
 }
 
-/* line 494, ../sass/main.sass */
+/* line 502, ../sass/main.sass */
 .sbc-navigation {
   font-size: 1.4em;
   font-family: "Bebas Neue Regular", Arial, sans-serif;
+  color: #B20000;
 }
 
-/* line 500, ../sass/main.sass */
+/* line 509, ../sass/main.sass */
 .sbc-legend tr:last-child {
   display: none;
 }
 
-/* line 503, ../sass/main.sass */
+/* line 512, ../sass/main.sass */
 img#wpstats {
   display: none;
 }
 
-/* line 507, ../sass/main.sass */
+/* line 516, ../sass/main.sass */
 .arrival-date input {
   width: 210px;
 }
 
-/* line 510, ../sass/main.sass */
+/* line 519, ../sass/main.sass */
 .ui-datepicker {
   display: none;
   padding: 10px;
@@ -1258,7 +1275,7 @@ img#wpstats {
   text-align: center;
 }
 
-/* line 522, ../sass/main.sass */
+/* line 531, ../sass/main.sass */
 .ui-datepicker-header a {
   color: inherit;
   text-decoration: inherit;
@@ -1272,7 +1289,7 @@ img#wpstats {
   outline: none;
 }
 
-/* line 526, ../sass/main.sass */
+/* line 535, ../sass/main.sass */
 .ui-datepicker-prev {
   color: inherit;
   text-decoration: inherit;
@@ -1298,7 +1315,7 @@ img#wpstats {
   background: #0068d1;
 }
 
-/* line 530, ../sass/main.sass */
+/* line 539, ../sass/main.sass */
 .ui-datepicker-next {
   color: inherit;
   text-decoration: inherit;
@@ -1324,7 +1341,7 @@ img#wpstats {
   background: #0068d1;
 }
 
-/* line 534, ../sass/main.sass */
+/* line 543, ../sass/main.sass */
 .ui-datepicker-title {
   clear: both;
   padding-top: 12px;
@@ -1334,26 +1351,26 @@ img#wpstats {
   color: #B20000;
 }
 
-/* line 544, ../sass/main.sass */
+/* line 553, ../sass/main.sass */
 .ui-datepicker-calendar {
   width: 200px;
 }
-/* line 546, ../sass/main.sass */
+/* line 555, ../sass/main.sass */
 .ui-datepicker-calendar thead {
   font-family: "Bebas Neue Regular", Arial, sans-serif;
   color: #B20000;
 }
-/* line 549, ../sass/main.sass */
+/* line 558, ../sass/main.sass */
 .ui-datepicker-calendar thead span {
   display: block;
   text-align: center;
 }
-/* line 552, ../sass/main.sass */
+/* line 561, ../sass/main.sass */
 .ui-datepicker-calendar td {
   padding: 3px;
   text-align: center;
 }
-/* line 555, ../sass/main.sass */
+/* line 564, ../sass/main.sass */
 .ui-datepicker-calendar td a {
   color: inherit;
   text-decoration: inherit;
@@ -1365,12 +1382,12 @@ img#wpstats {
   outline: none;
 }
 
-/* line 559, ../sass/main.sass */
+/* line 568, ../sass/main.sass */
 .ui-datepicker-unselectable {
   color: #CCCCCC;
 }
 
-/* line 581, ../sass/main.sass */
+/* line 590, ../sass/main.sass */
 .embed-youtube {
   position: relative;
   padding-top: 58.47953%;
@@ -1379,14 +1396,14 @@ img#wpstats {
   width: 100% !important;
 }
 @media only screen and (min-width: 960px) {
-  /* line 581, ../sass/main.sass */
+  /* line 590, ../sass/main.sass */
   .embed-youtube {
     width: 900px !important;
     margin-left: -20px;
   }
 }
 
-/* line 587, ../sass/main.sass */
+/* line 596, ../sass/main.sass */
 .youtube-player {
   max-width: 100%;
   max-height: 100%;
@@ -1398,7 +1415,7 @@ img#wpstats {
   margin: auto;
 }
 
-/* line 590, ../sass/main.sass */
+/* line 599, ../sass/main.sass */
 #botr_5MuzxJXF_tweTkqiD_div_wrapper {
   position: relative;
   padding-top: 58.47953%;
@@ -1406,7 +1423,7 @@ img#wpstats {
   overflow: hidden;
   width: 100% !important;
 }
-/* line 592, ../sass/main.sass */
+/* line 601, ../sass/main.sass */
 #botr_5MuzxJXF_tweTkqiD_div_wrapper object {
   max-width: 100%;
   max-height: 100%;
@@ -1418,7 +1435,7 @@ img#wpstats {
   margin: auto;
 }
 
-/* line 595, ../sass/main.sass */
+/* line 604, ../sass/main.sass */
 .tiled-gallery p {
   margin-bottom: 0px;
 }

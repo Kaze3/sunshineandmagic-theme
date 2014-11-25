@@ -478,6 +478,12 @@ div.wpcf7
 
 .sbc-calendar-wrapper
   color: $main-text-colour
+  width: 202px
+  margin: 0 auto
+  +respond-to(large-screen)
+    width: 404px
+  +respond-to(wide-screen)
+    width: 606px
 
 .sbc-calendar
   table
@@ -485,15 +491,18 @@ div.wpcf7
     thead
       tr
         th
+          font-family: $text-font
           color: $main-text-colour
     tbody
       tr
         td
+          font-family: $text-font
           color: $main-text-colour
 
 .sbc-navigation
   font-size: 1.4em
   font-family: $title-font
+  color: $header-colour-1
 
 .sbc-legend
   tr
