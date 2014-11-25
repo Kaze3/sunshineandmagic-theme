@@ -412,7 +412,9 @@ article
   +respond-to(wide-screen)
     width: 898px !important
 
-table.easy-table
+.easy-table
+  thead tr th
+    line-height: 26px
   th
     font-family: $title-font
     color: $header-colour-1
@@ -420,6 +422,10 @@ table.easy-table
     font-size: 1.5em
   td
     color: $main-text-colour
+
+.table-responsive
+  border: none
+  overflow-x: auto
 
 small
   font-size: 0.8em
