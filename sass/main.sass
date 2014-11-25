@@ -559,5 +559,38 @@ img#wpstats
 .ui-datepicker-unselectable
   color: $header-colour-2
 
+$ratio: (1 / 1.71)
+
+=ratio-outer($ratio)
+  position: relative
+  padding-top: percentage($ratio)
+  height: 0 !important
+  overflow: hidden
+  width: 100% !important
+
+=ratio-inner
+  max-width: 100%
+  max-height: 100%
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+
 .embed-youtube
-  margin-left: -20px
+  +ratio-outer(1/1.71)
+  +respond-to(wide-screen)
+    width: 900px !important
+    margin-left: -20px
+
+.youtube-player
+  +ratio-inner
+
+#botr_5MuzxJXF_tweTkqiD_div_wrapper
+  +ratio-outer(1/1.71)
+  object
+    +ratio-inner
+
+.tiled-gallery p
+  margin-bottom: 0px

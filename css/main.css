@@ -1370,7 +1370,55 @@ img#wpstats {
   color: #CCCCCC;
 }
 
-/* line 562, ../sass/main.sass */
+/* line 581, ../sass/main.sass */
 .embed-youtube {
-  margin-left: -20px;
+  position: relative;
+  padding-top: 58.47953%;
+  height: 0 !important;
+  overflow: hidden;
+  width: 100% !important;
+}
+@media only screen and (min-width: 960px) {
+  /* line 581, ../sass/main.sass */
+  .embed-youtube {
+    width: 900px !important;
+    margin-left: -20px;
+  }
+}
+
+/* line 587, ../sass/main.sass */
+.youtube-player {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 590, ../sass/main.sass */
+#botr_5MuzxJXF_tweTkqiD_div_wrapper {
+  position: relative;
+  padding-top: 58.47953%;
+  height: 0 !important;
+  overflow: hidden;
+  width: 100% !important;
+}
+/* line 592, ../sass/main.sass */
+#botr_5MuzxJXF_tweTkqiD_div_wrapper object {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 595, ../sass/main.sass */
+.tiled-gallery p {
+  margin-bottom: 0px;
 }
