@@ -1369,3 +1369,8 @@ img#wpstats {
 .ui-datepicker-unselectable {
   color: #CCCCCC;
 }
+
+/* line 562, ../sass/main.sass */
+.youtube-embed {
+  margin-left: -20px;
+}
