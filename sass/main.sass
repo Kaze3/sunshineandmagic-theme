@@ -146,10 +146,12 @@ strong
       right: 10px
     a
       +replace-text("header_logo.png")
-      height: 151px
+      height: 181px
       background-size: contain
       display: block
-      padding-top: 14px
+      padding-top: 20px
+      +respond-to(medium-screen)
+        height: 130px
       +respond-to(small-screen)
         height: 100px
 
