@@ -468,7 +468,7 @@ strong {
   /* line 163, ../sass/main.sass */
   .tagline {
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     right: 10px;
   }
 }
@@ -476,7 +476,7 @@ strong {
   /* line 163, ../sass/main.sass */
   .tagline {
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     right: 10px;
   }
 }
