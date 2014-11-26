@@ -33,7 +33,7 @@ $script-font: "Indie Flower", cursive
 
 $header-menu-hover: #EEEEEE
 
-$break-small: 420px
+$break-small: 460px
 $break-medium: 650px
 $break-wide: 960px
 
@@ -482,6 +482,8 @@ div.wpcf7
   color: $main-text-colour
   width: 202px
   margin: 0 auto
+  +respond-to(medium-screen)
+    width: 404px
   +respond-to(large-screen)
     width: 404px
   +respond-to(wide-screen)
