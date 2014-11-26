@@ -575,8 +575,8 @@ img#wpstats
 $ratio: (1 / 1.71)
 
 =ratio-outer($ratio)
-  position: relative
-  padding-top: percentage($ratio)
+  position: relative !important
+  padding-top: percentage($ratio) !important
   height: 0 !important
   overflow: hidden
   width: 100% !important
@@ -604,6 +604,12 @@ $ratio: (1 / 1.71)
   +ratio-outer(1/1.71)
   object
     +ratio-inner
+
+.jwplayer
+  +ratio-outer(1/1.71)
+
+.jwmain
+  +ratio-inner
 
 .tiled-gallery p
   margin-bottom: 0px

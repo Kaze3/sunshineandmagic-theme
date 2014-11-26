@@ -1401,8 +1401,8 @@ img#wpstats {
 
 /* line 594, ../sass/main.sass */
 .embed-youtube {
-  position: relative;
-  padding-top: 58.47953%;
+  position: relative !important;
+  padding-top: 58.47953% !important;
   height: 0 !important;
   overflow: hidden;
   width: 100% !important;
@@ -1429,8 +1429,8 @@ img#wpstats {
 
 /* line 603, ../sass/main.sass */
 #botr_5MuzxJXF_tweTkqiD_div_wrapper {
-  position: relative;
-  padding-top: 58.47953%;
+  position: relative !important;
+  padding-top: 58.47953% !important;
   height: 0 !important;
   overflow: hidden;
   width: 100% !important;
@@ -1448,6 +1448,27 @@ img#wpstats {
 }
 
 /* line 608, ../sass/main.sass */
+.jwplayer {
+  position: relative !important;
+  padding-top: 58.47953% !important;
+  height: 0 !important;
+  overflow: hidden;
+  width: 100% !important;
+}
+
+/* line 611, ../sass/main.sass */
+.jwmain {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* line 614, ../sass/main.sass */
 .tiled-gallery p {
   margin-bottom: 0px;
 }
