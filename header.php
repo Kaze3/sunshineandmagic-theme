@@ -4,7 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta name="theme-color" content="#0059B2" />
-  <title><?php wp_title('|'); ?></title>
+  <title><?php wp_title('|', 'true', 'right'); ?></title>
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
   <?php wp_head(); ?>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -24,7 +24,7 @@
 
 <div id="header-container">
 <div id="header">
-  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a><span class="tagline">Townhome Vacation Rentals in Florida</span></h1>
+  <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a><span class="tagline"><?php bloginfo('description'); ?></span></h1>
   <div id="header-menu">
     <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
   </div>
